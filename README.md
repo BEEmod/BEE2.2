@@ -4,7 +4,7 @@ BEE2
 A Portal 2 Mod Tool
 
 The BEEMOD originally began with creators August Loolam and Benjamin Thomas Blodgett, and was released in August of 2012 as an addon for the Portal 2 PTI (a simple map making tool).
-The BEEMOD is available for download here http://portal2backstock.com/bee/
+The BEEMOD is available for download here http://portal2backstock.com/bee/.
 
 The BEEMOD2 (commonly labeled as just BEE2) alpha released in August of 2013 was created by Benjamin Thomas Blodgett and Carl Kenner. The BEE2, incompased all released mods for the Portal 2 PTI. The BEE2 itself is an external application, written to allow the user to pick and choose which items they wish to use on the fixed size in-game palette provided by the PTI. Additionally, the mod includes an environment changing program written by Carl Kenner (StyleMod). Original StyleMod available here (http://steamcommunity.com/workshop/discussions/-1/882953189045851829/?appid=620). The official BEE2 page can be found here http://portal2backstock.com/bee2/.
 
