@@ -11,14 +11,13 @@ The BEEMOD2 (commonly labeled as just BEE2) alpha released in August of 2013 was
 The BEE2 has been added to git for the beta testing. As people like adding their own creations to the BEE2 interface, this provides a good medium for people to submit items to be included in the default distribution.
 
 A big thanks to everyone who has contributed to this project by creating new custom content!
-{
-August Loolam (Rantis)
-Benjamin Thomas Blodgett (BenVlodgi)
-Ben Bryant (Mevious)
-Bisqwit
-Carl Kenner
-Felix Griffin
-HMW
-Skotty
-TeamSpen210
-}
+- August Loolam (Rantis)
+- Benjamin Thomas Blodgett (BenVlodgi)
+- Ben Bryant (Mevious)
+- Bisqwit
+- Carl Kenner
+- Felix Griffin
+- HMW
+- Skotty
+- TeamSpen210
+
