@@ -1,0 +1,5550 @@
+//@Style
+//      "Style"         "Clean"
+//      "Name"          "FGEMOD"
+//      "Author"        "Felix Griffin"
+//      "Comment"       "Items from the FGEMOD"
+//@EndStyle
+
+"ItemData"
+{
+
+ 	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Fires explosive bombs at the player. Makes a nice boss when deactivated by breakable walls or the like. Note: you must connect this to an AND gate if you want to use multiple inputs! Unfortunately, I never managed to make a good model for this. Voiceovers made by RedTheGreen."
+		"Type"		"ITEM_ANIMAL_KING"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Animal King"
+				"Model"
+				{
+					"ModelName"			"sentry.3ds"
+					"TextureName"		"sentryturret.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"ANIMAL KING"
+					"Image"		"palette/animalking.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceTurret"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandTurret"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseTurret"
+					"SOUND_DELETED"					"P2Editor.RemoveTurret"
+				}
+			}
+			"MovementHandle"		"HANDLE_36_DIRECTIONS"
+			"InvalidSurface"		"CEILING WALL"
+			"CanAnchorOnBarriers"		"1"
+			"OccupiesVoxel"				"0"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/animalking.vmf"
+					//packer_additem:models/npcs/turret/big_turret_crown.dx80.vtx
+					//packer_additem:models/npcs/turret/big_turret_crown.dx90.vtx
+					//packer_additem:models/npcs/turret/big_turret_crown.mdl
+					//packer_additem:models/npcs/turret/big_turret_crown.phy
+					//packer_additem:models/npcs/turret/big_turret_crown.sw.vtx
+					//packer_additem:models/npcs/turret/big_turret_crown.vvd
+					
+					//packer_additem:materials/models/npcs/turret/crown.vmt
+					//packer_additem:materials/models/npcs/turret/crown.vtf
+					//packer_additem:materials/models/npcs/turret/turret01.vmt
+					//packer_additem:materials/models/npcs/turret/turret01.vtf
+					//packer_additem:materials/models/npcs/turret/turret01_exponent.vtf
+					//packer_additem:materials/models/npcs/turret/turret01_normal.vtf
+					//packer_additem:materials/models/npcs/turret/turret_casing.vtf
+					//packer_additem:materials/models/npcs/turret/turret_casing_regular.vmt
+					//packer_additem:materials/models/npcs/turret/turret_casing_regular.vtf
+					//packer_additem:materials/models/npcs/turret/turret_eye.vmt
+					//packer_additem:materials/models/npcs/turret/turret_eye.vtf
+					//packer_additem:materials/models/npcs/turret/turret_frame01.vmt
+					//packer_additem:materials/models/npcs/turret/turret_frame01.vtf
+					//packer_additem:materials/models/npcs/turret/turret_frame02.vmt
+					//packer_additem:materials/models/npcs/turret/turret_frame02.vtf
+					//packer_additem:materials/models/npcs/turret/turret_paint_normal.vtf
+					//packer_additem:materials/models/npcs/turret/turret2casing.vmt
+					//packer_additem:materials/models/npcs/turret/turret2casing.vtf
+					"EntityCount"	"1"
+				}
+			}
+			"TargetName"		"animalking"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"			"instance:enable;Trigger"
+					"Deactivate"		"instance:disable;Trigger"
+				}
+			}
+			"Offset"		"64 64 64"
+			"ConnectionPoints"
+            {
+                // left
+                "Point"
+                {
+                    "Dir"               "1 0 0"
+                    "Pos"               "1 3 0"
+                    "SignageOffset"     "0 2 0"
+                    "Priority"  "0"
+                }
+                "Point"
+                {
+                    "Dir"               "1 0 0"
+                    "Pos"               "1 4 0"
+                    "SignageOffset"     "0 5 0"
+                    "Priority"  "0"
+                }
+                // right
+                "Point"
+                {
+                    "Dir"               "-1 0 0"
+                    "Pos"               "6 3 0"
+                    "SignageOffset"     "7 2 0"
+                    "Priority"  "0"
+                }
+                "Point"
+                {
+                    "Dir"               "-1 0 0"
+                    "Pos"               "6 4 0"
+                    "SignageOffset"     "7 5 0"
+                    "Priority"  "0"
+                }
+                // up
+                "Point"
+                {
+                    "Dir"               "0 1 0"
+                    "Pos"               "3 1 0"
+                    "SignageOffset"     "2 0 0"
+                    "Priority"  "0"
+                }
+                "Point"
+                {
+                    "Dir"               "0 1 0"
+                    "Pos"               "4 1 0"
+                    "SignageOffset"     "5 0 0"
+                    "Priority"  "0"
+                }
+                // down
+                "Point"
+                {
+                    "Dir"               "0 -1 0"
+                    "Pos"               "3 6 0"
+                    "SignageOffset"     "2 7 0"
+                    "Priority"  "0"
+                }
+                "Point"
+                {
+                    "Dir"               "0 -1 0"
+                    "Pos"               "4 6 0"
+                    "SignageOffset"     "5 7 0"
+                    "Priority"  "0"
+                }
+            }
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Opens an orange or blue portal. Based on the BEEMOD version."
+		"Type"		"ITEM_FG_AUTOPORTAL"
+		"ItemClass"	"ItemButtonFloor"
+        "Editor"
+        {
+            "SubTypeProperty"       "ButtonType"
+            "SubType"
+			{
+				"Name"			"Autoportal (Blue)"
+				"Model"
+				{
+					"ModelName"	"autoportal_blue.3ds"
+					"TextureName"	"buttonweight.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"AUTOPORTAL"
+					"Image"			"palette/fixed_portal_door.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"			"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"			"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"			"Autoportal (Orange)"
+				"Model"
+				{
+					"ModelName"	"autoportal_orange.3ds"
+					"TextureName"	"buttonweight.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"			"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"			"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"			"Autoportal (Empty)"
+				"Model"
+				{
+					"ModelName"	"autoportal_frame.3ds"
+					"TextureName"	"buttonweight.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"			"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"			"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"	"HANDLE_NONE"
+			"DesiredFacing"		"DESIRES_UP"
+		}
+		"Properties"
+		{
+			"ButtonType"
+            {
+                "DefaultValue"	"0"
+                "Index"			"0"
+            }
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"				"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/autoportal_blue.vmf"
+					"EntityCount"		"10"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"1"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/autoportal_blue.vmf"
+					"EntityCount"		"10"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"2"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/autoportal_orange.vmf"
+					"EntityCount"		"10"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"3"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/autoportal_orange.vmf"
+					"EntityCount"		"10"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"4"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/autoportal_extra.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"5"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/autoportal_extra.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+			}
+			"TargetName"		"autoportalfg"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"	"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 2 0"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+
+			"EmbedFace"
+			{
+				"Solid"
+				{
+					"Center"		"64 64 128"
+					"Dimensions"	"128 64 4"
+					"Grid"			"1x2"
+				}
+				"Solid"
+				{
+					"Center"		"64 16 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"64 112 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Drops explosive bombs when triggered. Do not confuse it with a cube dropper."
+		"Type"			"ITEM_DROPPER_BOMB"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Bomb Dropper"
+				"Model"
+				{
+					"ModelName"			"dropper.3ds"
+					"TextureName"		"dropper.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"BOMB DROPPER"
+					"Image"		"palette/dropper.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceCube"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandCube"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseCube"
+					"SOUND_DELETED"					"P2Editor.RemoveCube"
+				}
+				"Animations"
+				{
+						"ANIM_IDLE"					"0"
+						"ANIM_EDITING_ACTIVATE"		"1"
+						"ANIM_EDITING_DEACTIVATE"	"2"
+						"ANIM_DISAPPEAR"			"3"
+						"ANIM_REAPPEAR"				"4"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"InvalidSurface"		"WALL FLOOR"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/bomb_dropper.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"bombdropper"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Glass that breaks when hit by a bomb or such. Also acts as a one-time-use OR gate."
+		"Type"			"ITEM_GLASS_BREAK"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Breakable Glass"
+				"Model"
+				{
+					"ModelName"		"glass_handle.3ds"
+					"TextureName"	"buttonpedestal.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"BREAKABLE GLASS"
+					"Image"			"palette/breakglass.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/breakglass.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"breakglass"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:input;Trigger"
+					"Deactivate"	" "
+				}
+			}
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:output;OnTrigger"
+					"Deactivate"	" "
+				}
+			}
+
+			"OccupiesVoxel"		"0"
+
+			"ConnectionPoints"
+			{
+				// outside voxel
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 6 0"
+					"SignageOffset"		"-2 7 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 2 0"
+					"SignageOffset"		"-2 3 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 0 0"
+					"SignageOffset"		"-2 1 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+
+				// sides
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "1"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+
+				// inside voxel
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"3 7 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"3 5 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"3 3 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"3 1 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+			}
+
+			"Offset"	"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;BEE2;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"It's watching you..."
+		"Type"			"ITEM_CAMERA"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Security Camera"
+				"Model"
+				{
+					"ModelName"			"camera.3ds"
+					"TextureName"		"lightbridgeemitter.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"SECURITY CAMERA"
+					"Image"			"palette/camera.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_8_POSITIONS"
+			"DesiredFacing"		"DESIRES_UP"
+			"CanAnchorOnBarriers"	"1"
+			"OccupiesVoxel"			"0"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/camera.vmf"
+					"EntityCount"	"1"
+				}
+			}
+
+			"TargetName"		"cam"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"CollideType"		"COLLIDE_NOTHING"
+					"CollideAgainst"	"COLLIDE_NOTHING"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}
+
+   	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Here you go, Spamfan. Enjoy."
+		"Type"			"ITEM_CATWALK_1"
+		"ItemClass" 	"ItemButtonFloor"
+		"Editor"
+		{
+			"SubTypeProperty"       "ButtonType"
+			"SubType"
+            {
+                "Name"      "Catwalk (Straight)"
+                "Model"
+                {
+                    "ModelName"     "vactube_1.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Palette"
+                {
+                    "Tooltip"   "CATWALK"
+                    "Image"     "palette/vactube1.png"
+                    "Position"  "0 0 0"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "SubType"
+            {
+                "Name"      "Catwalk (Corner)"
+                "Model"
+                {
+                    "ModelName"     "vactube_2.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "SubType"
+            {
+                "Name"      "Catwalk (T)"
+                "Model"
+                {
+                    "ModelName"     "vactube_3.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+			"InvalidSurface"	"FLOOR WALL"
+		}
+		"Properties"
+		{
+			"ButtonType"
+            {
+                "DefaultValue"  "0"
+                "Index"         "0"
+            }
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/catwalk_1.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"1"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/catwalk_1.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"2"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/catwalk_2.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"3"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/catwalk_2.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"4"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/catwalk_3.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"5"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/catwalk_3.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"catwalk1"
+			"Offset"	"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Makes GLaDOS play a line when triggered. Select the line using the button-timer-thingy."
+		"Type"			"ITEM_CHOREO"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Choreo Box"
+				"Model"
+				{
+					"ModelName"		"choreo.3ds"
+					"TextureName"	"buttonpedestal.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"GLADOS CHOREO BOX"
+					"Image"			"palette/choreo.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"OccupiesVoxel"			"0"
+			"CanAnchorOnBarriers"	"1"
+			"CanAnchorOnGoo"		"1"
+		}
+		"Properties"
+		{
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"1"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/choreo.vmf"
+					"EntityCount"		"2"
+					"BrushCount"		"0"
+					"BrushSideCount"	"0"
+				}
+			}
+
+			"TargetName"		"choreo"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:input;Trigger"
+					"Deactivate"	"instance:input;Enable"
+				}
+			}
+
+			"ConnectionPoints"
+			{
+				// outside voxel
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 6 0"
+					"SignageOffset"		"-2 7 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 2 0"
+					"SignageOffset"		"-2 3 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 0 0"
+					"SignageOffset"		"-2 1 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+
+				// sides
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "1"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+
+				// inside voxel
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"3 7 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"3 5 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"3 3 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"3 1 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+			}
+
+			"Offset"	"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Toggles when comballs go through. Based on the Flux Field used in Rexaura."
+		"Type"			"ITEM_FG_COMBALL_FIELD"
+		"ItemClass"		"ItemAngledPanel"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Flux Field"
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_blue_1.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_blue_2.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_blue_3.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_blue_4.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"FLUX FIELD"
+					"Image"		"palette/fizzler.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_6_POSITIONS"
+			"DesiredFacing"		"DESIRES_HORIZONTAL"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartDeployed"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+			"Portalable"
+			{
+				"DefaultValue"	"1"
+				"Index"			"0"
+			}
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"3"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/comball_field.vmf"
+					"EntityCount"		"12"
+					"BrushCount"		"5"
+					"BrushSideCount"	"39"
+				}
+			}
+
+			"TargetName"		"comball_field"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:OnFalse;OnTrigger"
+					"Deactivate"	"instance:OnTrue;OnTrigger"
+				}
+			}
+			"Offset"		"64 64 64"
+			
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"	"0"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Toggles when comballs go through. Based on the Flux Field used in Rexaura. This one disables after a certain amount of time."
+		"Type"			"ITEM_FG_COMBALL_FIELD_GREEN"
+		"ItemClass"		"ItemAngledPanel"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Flux Field (Green)"
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_1.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_2.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_3.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_4.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"FLUX FIELD (GREEN)"
+					"Image"		"palette/physler.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_6_POSITIONS"
+			"DesiredFacing"		"DESIRES_HORIZONTAL"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartDeployed"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+			"Portalable"
+			{
+				"DefaultValue"	"1"
+				"Index"			"0"
+			}
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"3"
+			}
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"4"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"5"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/comball_field_green.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"0"
+					"BrushSideCount"	"0"
+				}
+			}
+
+			"TargetName"		"comball_field_g"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:OnFalse;OnTrigger"
+					"Deactivate"	"instance:OnTrue;OnTrigger"
+				}
+			}
+			"Offset"		"64 64 64"
+			
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"	"0"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Catches High-Energy Pellets from Portal 1, then disables a moment later. Modified straight from Ben's instance."
+		"Type"		"ITEM_HIGH_ENERGY_PELLET_CATCHER_GREEN"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"HEP Catcher (Green)"
+				"Model"
+				{
+					"ModelName"		"combine_ball_catcher.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PELLET CATCHER (GREEN)"
+					"Image"		"palette/pellet_catcher2.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"1"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/high_energy_pellet_catcher_green.vmf"
+					"EntityCount"		"20"
+					"BrushCount"		"20"
+					"BrushSideCount"	"20"
+				}
+					// packer_additem:materials/models/props/clean/combine_ball_catcher.mdl
+					// packer_additem:materials/models/props/ball_catcher_clean.vmt
+					// packer_additem:materials/models/props/ball_catcher_clean.vtf
+					// packer_additem:materials/models/props/ball_catcher_clean_exponent.vtf
+					// packer_additem:materials/models/props/ball_catcher_clean_lightwarp.vtf
+					// packer_additem:materials/models/props/ball_catcher_clean_normal.vtf
+
+					// packer_additem:models/effects/combineball.dx80.vtx
+					// packer_additem:models/effects/combineball.dx90.vtx
+					// packer_additem:models/effects/combineball.mdl
+					// packer_additem:models/effects/combineball.sw.vtx
+					// packer_additem:models/effects/combineball.vtx
+					// packer_additem:models/effects/combineball.vvd
+					// packer_additem:materials/models/effects/comball_glow1.vmt
+					// packer_additem:materials/models/effects/comball_glow1.vtf
+					// packer_additem:materials/models/effects/comball_glow2.vmt
+					// packer_additem:materials/models/effects/comball_glow2.vtf
+					// packer_additem:materials/models/effects/comball_sphere.vmt
+					// packer_additem:materials/models/effects/comball_sphere.vtf
+					// packer_additem:materials/models/effects/comball_tape.vmt
+					// packer_additem:materials/models/effects/comball_tape.vtf
+					// packer_additem:materials/effects/eball_finite_life.vmt
+					// packer_additem:materials/effects/eball_infinite_life.vmt
+					// packer_additem:materials/effects/comball/comball.vtf
+					// packer_additem:sound/weapons/physcannon/energy_bounce1.wav
+					// packer_additem:sound/weapons/physcannon/energy_bounce2.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate4.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate5.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_explosion2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby1.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_loop4.wav
+			}
+			"TargetName"		"pelletcatchg"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:powered;OnTrigger"
+					"Deactivate"	"instance:unpowered;OnTrigger"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"	"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 2 0"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+		"Filter"	"FGE;Felix Griffin"
+		"Author"	"Felix Griffin"
+		"Description"	"Launches High-Energy Pellets from Portal 1. These ones never explode. Modified straight from Ben's instance."
+		"Type"		"ITEM_HIGH_ENERGY_PELLET_EMITTER_GREEN"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"HEP Launcher (Green)"
+				"Model"
+				{
+					"ModelName"		"combine_ball_launcher.3ds"
+					"TextureName"		"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PELLET EMITTER (GREEN)"
+					"Image"		"palette/pellet_emitter2.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/high_energy_pellet_emitter_green.vmf"
+					"EntityCount"		"20"
+					"BrushCount"		"20"
+					"BrushSideCount"	"20"
+				}
+					// packer_additem:materials/models/props/clean/combine_ball_launcher.mdl
+					// packer_additem:materials/models/props/c_ball_launcher_clean.vmt
+					// packer_additem:materials/models/props/c_ball_launcher_clean.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_exponent.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_lightwarp.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_normal.vtf
+
+					// packer_additem:models/effects/combineball.dx80.vtx
+					// packer_additem:models/effects/combineball.dx90.vtx
+					// packer_additem:models/effects/combineball.mdl
+					// packer_additem:models/effects/combineball.sw.vtx
+					// packer_additem:models/effects/combineball.vtx
+					// packer_additem:models/effects/combineball.vvd
+					// packer_additem:materials/models/effects/comball_glow1.vmt
+					// packer_additem:materials/models/effects/comball_glow1.vtf
+					// packer_additem:materials/models/effects/comball_glow2.vmt
+					// packer_additem:materials/models/effects/comball_glow2.vtf
+					// packer_additem:materials/models/effects/comball_sphere.vmt
+					// packer_additem:materials/models/effects/comball_sphere.vtf
+					// packer_additem:materials/models/effects/comball_tape.vmt
+					// packer_additem:materials/models/effects/comball_tape.vtf
+					// packer_additem:materials/effects/eball_finite_life.vmt
+					// packer_additem:materials/effects/eball_infinite_life.vmt
+					// packer_additem:materials/effects/comball/comball.vtf
+					// packer_additem:sound/weapons/physcannon/energy_bounce1.wav
+					// packer_additem:sound/weapons/physcannon/energy_bounce2.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate4.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate5.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_explosion2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby1.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_loop4.wav
+			}
+			"TargetName"		"pelletemitg"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Launches High-Energy Pellets from Portal 1. Just like Ben's, but with a timer attached."
+		"Type"			"ITEM_HIGH_ENERGY_PELLET_EMITTER_FG"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"HEP Launcher (Configurable)"
+				"Model"
+				{
+					"ModelName"		"combine_ball_launcher.3ds"
+					"TextureName"		"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PELLET EMITTER (CONFIGURABLE)"
+					"Image"		"palette/pellet_emitter2.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+			"TimerDelay"
+			{
+				"DefaultValue"	"6"
+				"Index"			"3"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"4"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/high_energy_pellet_emitter.vmf"
+					"EntityCount"		"20"
+					"BrushCount"		"20"
+					"BrushSideCount"	"20"
+				}
+					// packer_additem:materials/models/props/clean/combine_ball_launcher.mdl
+					// packer_additem:materials/models/props/c_ball_launcher_clean.vmt
+					// packer_additem:materials/models/props/c_ball_launcher_clean.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_exponent.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_lightwarp.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_normal.vtf
+
+					// packer_additem:models/effects/combineball.dx80.vtx
+					// packer_additem:models/effects/combineball.dx90.vtx
+					// packer_additem:models/effects/combineball.mdl
+					// packer_additem:models/effects/combineball.sw.vtx
+					// packer_additem:models/effects/combineball.vtx
+					// packer_additem:models/effects/combineball.vvd
+					// packer_additem:materials/models/effects/comball_glow1.vmt
+					// packer_additem:materials/models/effects/comball_glow1.vtf
+					// packer_additem:materials/models/effects/comball_glow2.vmt
+					// packer_additem:materials/models/effects/comball_glow2.vtf
+					// packer_additem:materials/models/effects/comball_sphere.vmt
+					// packer_additem:materials/models/effects/comball_sphere.vtf
+					// packer_additem:materials/models/effects/comball_tape.vmt
+					// packer_additem:materials/models/effects/comball_tape.vtf
+					// packer_additem:materials/effects/eball_finite_life.vmt
+					// packer_additem:materials/effects/eball_infinite_life.vmt
+					// packer_additem:materials/effects/comball/comball.vtf
+					// packer_additem:sound/weapons/physcannon/energy_bounce1.wav
+					// packer_additem:sound/weapons/physcannon/energy_bounce2.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate4.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate5.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_explosion2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby1.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_loop4.wav
+			}
+			"TargetName"		"pelletemitc"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+		"Filter"	"FGE;Felix Griffin"
+		"Author"	"Skotty, Reepblue, Felix Griffin"
+		"Description"	"Drops various types of cubes. Use the timer to select. 3 is an explosive lemon cube, don't ignite it. 4 is Skotty's Aerial Faith Cube, it has a catapult on the side. 5 is Reepblue's blue gel cube, it shoots out blue gel or water when you press the attack or attack2 buttons. 6 is a modified version of that cube that shoots orange gel. 7 is a wooden cube that burns but doesn't explode."
+		"Type"			"ITEM_DROPPER_FG"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Special Item Dropper"
+				"Model"
+				{
+					"ModelName"			"dropper.3ds"
+					"TextureName"		"dropper.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"SPECIAL ITEM DROPPER"
+					"Image"		"palette/dropper.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceCube"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandCube"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseCube"
+					"SOUND_DELETED"					"P2Editor.RemoveCube"
+				}
+				"Animations"
+				{
+						"ANIM_IDLE"					"0"
+						"ANIM_EDITING_ACTIVATE"		"1"
+						"ANIM_EDITING_DEACTIVATE"	"2"
+						"ANIM_DISAPPEAR"			"3"
+						"ANIM_REAPPEAR"				"4"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"InvalidSurface"		"WALL FLOOR"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"2"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"3"
+			}
+			"StartReversed"
+			{
+				"DefaultValue"		"0"
+				"Index"		"4"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/item_dropper.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"fgdropper"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"			"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+	"Item"
+    {
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"More intricate devices, in the style of HMW's logic gates. Includes a timer, a monostable multivibrator, and a T flip-flop."
+        "Type"      	"ITEM_LOGIC_GATE_FG"
+        "ItemClass" 	"ItemButtonFloor"
+        "Editor"
+        {
+            "SubTypeProperty"       "ButtonType"
+            "SubType"
+            {
+                "Name"      "Timer"
+                "Model"
+                {
+                    "ModelName"     "fg_circle_open.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Palette"
+                {
+                    "Tooltip"   "LOGIC GATES 2"
+                    "Image"     "palette/logic_gate_2.png"
+                    "Position"  "0 0 0"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "SubType"
+            {
+                "Name"      "Monostable Multivibrator"
+                "Model"
+                {
+                    "ModelName"     "fg_lines_0.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "SubType"
+            {
+                "Name"      "T Flip-Flop"
+                "Model"
+                {
+                    "ModelName"     "fg_lines_2.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "MovementHandle"        "HANDLE_4_DIRECTIONS"
+            "DesiredFacing"         "DESIRES_DOWN"
+        }
+        "Properties"
+        {
+            "ButtonType"
+            {
+                "DefaultValue"  "0"
+                "Index"         "0"
+            }
+            "ConnectionCount"
+            {
+                "DefaultValue"      "0"
+                "Index"     "1"
+            }
+            "StartEnabled"
+            {
+                "DefaultValue"      "0"
+                "Index"     "2"
+            }
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"3"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"4"
+			}
+        }
+        "Exporting"
+        {
+            "Instances"
+            {
+                "0"
+                {
+                    "Name"          "instances/p2editor/fg_editor_mod/logic_timer.vmf"
+                    "EntityCount"       "1"
+                    "BrushCount"        "1"
+                    "BrushSideCount"    "1"
+                }
+                "1"
+                {
+                    "Name"          "instances/p2editor/fg_editor_mod/logic_timer.vmf"
+                    "EntityCount"       "1"
+                    "BrushCount"        "1"
+                    "BrushSideCount"    "1"
+                }
+                "2"
+                {
+                    "Name"          "instances/p2editor/fg_editor_mod/logic_monostable.vmf"
+                    "EntityCount"       "1"
+                    "BrushCount"        "1"
+                    "BrushSideCount"    "1"
+                }
+                "3"
+                {
+                    "Name"          "instances/p2editor/fg_editor_mod/logic_monostable.vmf"
+                    "EntityCount"       "1"
+                    "BrushCount"        "1"
+                    "BrushSideCount"    "1"
+                }
+                "4"
+                {
+                    "Name"          "instances/p2editor/fg_editor_mod/logic_flipflop.vmf"
+                    "EntityCount"       "1"
+                    "BrushCount"        "1"
+                    "BrushSideCount"    "1"
+                }
+                "5"
+                {
+                    "Name"          "instances/p2editor/fg_editor_mod/logic_flipflop.vmf"
+                    "EntityCount"       "1"
+                    "BrushCount"        "1"
+                    "BrushSideCount"    "1"
+                }
+            }
+            "TargetName"        "logic_gate_2"
+            "Offset"        "64 64 64"
+            "Inputs"
+            {
+                "CONNECTION_STANDARD"
+                {
+                    "Activate"      "instance:signal_hi;Trigger"
+                    "Deactivate"    "instance:signal_lo;Trigger"
+                }
+            }
+            "Outputs"
+            {
+                "CONNECTION_STANDARD"
+                {
+                    "Activate"      "instance:out_on;OnTrigger"
+                    "Deactivate"    "instance:out_off;OnTrigger"
+                }
+            }
+            "OccupiedVoxels"
+            {
+                "Voxel"
+                {
+                    "Pos"       "0 0 0"
+                    "Surface"
+                    {
+                        "Pos"   "1 1 0"
+                    }
+                    "Surface"
+                    {
+                        "Pos"   "1 2 0"
+                    }
+                    "Surface"
+                    {
+                        "Pos"   "2 1 0"
+                    }
+                    "Surface"
+                    {
+                        "Pos"   "2 2 0"
+                    }
+                }
+            }
+            "EmbeddedVoxels"
+            {
+                "Voxel"
+                {
+                    "Pos"       "0 0 0"
+                }
+            }
+            "EmbedFace"
+            {
+                "Solid"
+                {
+                    "Center"        "64 16 128"
+                    "Dimensions"    "128 32 4"
+                    "Grid"          "4x4"
+                }
+                "Solid"
+                {
+                    "Center"        "64 112 128"
+                    "Dimensions"    "128 32 4"
+                    "Grid"          "4x4"
+                }
+                "Solid"
+                {
+                    "Center"        "16 64 128"
+                    "Dimensions"    "32 64 4"
+                    "Grid"          "4x4"
+                }
+                "Solid"
+                {
+                    "Center"        "112 64 128"
+                    "Dimensions"    "32 64 4"
+                    "Grid"          "4x4"
+                }
+            }
+            "ConnectionPoints"
+            {
+                // left
+                "Point"
+                {
+                    "Dir"               "1 0 0"
+                    "Pos"               "1 3 0"
+                    "SignageOffset"     "0 2 0"
+                    "Priority"  "0"
+                }
+                "Point"
+                {
+                    "Dir"               "1 0 0"
+                    "Pos"               "1 4 0"
+                    "SignageOffset"     "0 5 0"
+                    "Priority"  "0"
+                }
+
+                // right
+                "Point"
+                {
+                    "Dir"               "-1 0 0"
+                    "Pos"               "6 3 0"
+                    "SignageOffset"     "7 2 0"
+                    "Priority"  "0"
+                }
+                "Point"
+                {
+                    "Dir"               "-1 0 0"
+                    "Pos"               "6 4 0"
+                    "SignageOffset"     "7 5 0"
+                    "Priority"  "0"
+                }
+
+                // up
+                "Point"
+                {
+                    "Dir"               "0 1 0"
+                    "Pos"               "3 1 0"
+                    "SignageOffset"     "2 0 0"
+                    "Priority"  "0"
+                }
+                "Point"
+                {
+                    "Dir"               "0 1 0"
+                    "Pos"               "4 1 0"
+                    "SignageOffset"     "5 0 0"
+                    "Priority"  "0"
+                }
+
+                // down
+                "Point"
+                {
+                    "Dir"               "0 -1 0"
+                    "Pos"               "3 6 0"
+                    "SignageOffset"     "2 7 0"
+                    "Priority"  "0"
+                }
+                "Point"
+                {
+                    "Dir"               "0 -1 0"
+                    "Pos"               "4 6 0"
+                    "SignageOffset"     "5 7 0"
+                    "Priority"  "0"
+                }
+            }
+        }
+    }
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Like in Portal 1. Looks different from standard metal walls."
+		"Type"			"ITEM_PORTAL1_WALL"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Portal 1 Wall"
+				"Model"
+				{
+					"ModelName"		"portal1wall.3ds"
+					"TextureName"	"portal_door.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL 1 WALL"
+					"Image"			"palette/portal1wall.png"
+					"Position"		"0 0 0"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"OccupiesVoxel"			"0"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/portal1wall.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+			}
+
+			"TargetName"	"p1wall"
+			"Offset"		"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Removes paint that flows through it."
+		"Type"			"ITEM_FG_PAINT_FIZZLER"
+		"ItemClass"		"ItemAngledPanel"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Paint Fizzler"
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PAINT FIZZLER"
+					"Image"		"palette/deathfield.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_6_POSITIONS"
+			"DesiredFacing"		"DESIRES_HORIZONTAL"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartDeployed"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+			"Portalable"
+			{
+				"DefaultValue"	"1"
+				"Index"			"0"
+			}
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"3"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/paint_fizzler.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"0"
+					"BrushSideCount"	"0"
+				}
+			}
+
+			"TargetName"		"paintfield"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"	"0"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"No more useless three-second timers when you don't need them!"
+		"ItemClass"		"ItemPedestalButton"
+		"Type"			"ITEM_BUTTON_PEDESTAL_INSTANT"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Instant Pedestal Button"
+				"Model"
+				{
+					"ModelName"		"switch.3ds"
+					"TextureName"	"buttonpedestal.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"INSTANT PEDESTAL BUTTON"
+					"Image"			"palette/pedestal_button.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/pedestal_button.vmf"
+					"EntityCount"		"6"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+			}
+
+			"TargetName"		"button"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:relay_activated;OnTrigger"
+					"Deactivate"	"instance:relay_deactivated;OnTrigger"
+				}
+			}
+
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+						"Pos"		"0 1 0"
+					}
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+						"Pos"		"0 2 0"
+					}
+
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 1 0"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 2 0"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 1 1"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 2 1"
+					}
+				}
+			}
+
+			"ConnectionPoints"
+			{
+				// outside voxel
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 6 0"
+					"SignageOffset"		"-2 7 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 2 0"
+					"SignageOffset"		"-2 3 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 0 0"
+					"SignageOffset"		"-2 1 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+
+				// sides
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "1"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+
+				// inside voxel
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"3 7 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"3 5 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"3 3 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"3 1 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+			}
+
+			"Offset"	"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+		"Filter"		"FGE;Felix Griffin"
+		"Author"		"Felix Griffin"
+		"Description"	"Physics objects can't go through. The player and portals can."
+		"Type"			"ITEM_FG_PHYSLER"
+		"ItemClass"		"ItemAngledPanel"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Physics Shield"
+				"Model"
+				{
+					"ModelName"	"comball_field_green_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_1.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_2.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_3.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_4.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PHYSICS SHIELD"
+					"Image"		"palette/physler.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_6_POSITIONS"
+			"DesiredFacing"		"DESIRES_HORIZONTAL"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+			"Portalable"
+			{
+				"DefaultValue"	"1"
+				"Index"			"0"
+			}
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"3"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/physler.vmf"
+					"EntityCount"		"12"
+					"BrushCount"		"5"
+					"BrushSideCount"	"39"
+				}
+			}
+
+			"TargetName"		"physler"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"	"0"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Redirects portals aimed at it."
+		"Type"		"ITEM_PORTAL_CUBE"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Portal Deflection Cube"
+				"Model"
+				{
+					"ModelName"			"portalcube.3ds"
+					"TextureName"		"lightbridgeemitter.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL DEFLECTION CUBE"
+					"Image"			"palette/portal_deflection_cube.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"DesiredFacing"			"DESIRES_UP"
+			"OccupiesVoxel"			"0"
+		}
+		"Properties"
+		{
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/portal_deflection_cube.vmf"
+					"EntityCount"	"1"
+				}
+			}
+
+			"TargetName"		"portalcube"
+			"Offset"		"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Fires portals. Can rotate automatically before being collected by the player."
+		"ItemClass"	"ItemButtonFloor"
+		"Type"		"ITEM_PORTALGUN"
+		"Editor"
+		{
+			"SubTypeProperty"		"ButtonType"
+			"SubType"
+			{
+				"Name"			"Portal Gun"
+				"Model"
+				{
+					"ModelName"		"portalgun1.3ds"
+					"TextureName"	"buttonweight.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL GUN"
+					"Image"			"palette/portalgun.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"		"Portal Gun (Blue Only)"
+				"Model"
+				{
+					"ModelName"		"portalgun2.3ds"
+					"TextureName"	"button_cube.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"		"Portal Gun (Potato)"
+				"Model"
+				{
+					"ModelName"		"portalgun3.3ds"
+					"TextureName"	"button_ball.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+			"ButtonType"
+			{
+				"DefaultValue"	"0"
+				"Index"			"0"
+			}
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/portalgun1.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"1"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/portalgun1.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"2"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/portalgun2.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"3"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/portalgun2.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"4"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/portalgun3.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				"5"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/portalgun3.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"portalgun"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Add"
+				}
+			}
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Just like in Rexaura, destroys any energy ball that gets close to it. And anything else, for that matter."
+		"Type"		"ITEM_POSITRON_ORB"
+		"ItemClass"		"ItemPistonPlatform"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Positron Orb"
+				"Model"
+				{
+					"ModelName"		"piston_lift_grate.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section01.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section02.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section03.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"cubesphere.3ds"
+					"TextureName"	"motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"		"destination_arrow.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_tube.3ds"
+					"TextureName"	"motionplatform.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"POSITRON ORB"
+					"Image"		"palette/positron_orb.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"BottomLevel"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"TopLevel"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+			"StartUp"
+			{
+				"DefaultValue"		"0"
+				"Index"		"3"
+			}
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"4"
+			}
+			"AutoTrigger"
+			{
+				"DefaultValue"		"0"
+				"Index"		"5"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/positron_orb.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"positronorb"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+				"Voxel"
+				{
+					"Pos"		"0 0 -1"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Based on the upcoming sourcemod PUNT, used with permission. Credit Reepblue in your map if you use this. Type 1 flips gravity, Type 2 freezes wherever it is, and Type 3 slows down time when clicked. Another click disables."
+		"Type"		"ITEM_PUNT_CUBE"
+		"Editor"
+		{
+			"SubTypeProperty"       "ButtonType"
+			"SubType"
+			{
+				"Name"			"PUNT Cube (Gravity)"
+				"Model"
+				{
+					"ModelName"			"puntcube.3ds"
+					"TextureName"		"lightbridgeemitter.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PUNT CUBE"
+					"Image"			"palette/cube.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceCube"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandCube"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseCube"
+					"SOUND_DELETED"					"P2Editor.RemoveCube"
+				}
+			}
+			"SubType"
+			{
+				"Name"			"PUNT Cube (Pause)"
+				"Model"
+				{
+					"ModelName"			"puntcube_pause.3ds"
+					"TextureName"		"lightbridgeemitter.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceCube"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandCube"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseCube"
+					"SOUND_DELETED"					"P2Editor.RemoveCube"
+				}
+			}
+			"SubType"
+			{
+				"Name"			"PUNT Cube (Slow)"
+				"Model"
+				{
+					"ModelName"			"puntcube_time.3ds"
+					"TextureName"		"lightbridgeemitter.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceCube"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandCube"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseCube"
+					"SOUND_DELETED"					"P2Editor.RemoveCube"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"DesiredFacing"			"DESIRES_UP"
+			"OccupiesVoxel"			"1"
+		}
+		"Properties"
+		{
+			"ButtonType"
+            {
+                "DefaultValue"  "0"
+                "Index"         "0"
+            }
+			"StartEnabled"
+			{
+				"DefaultValue"		"0"
+				"Index"				"1"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/punt_cube.vmf"
+					"EntityCount"	"1"
+				}
+				"1"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/punt_cube.vmf"
+					"EntityCount"	"1"
+				}
+				"2"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/punt_cube_pause.vmf"
+					"EntityCount"	"1"
+				}
+				"3"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/punt_cube_pause.vmf"
+					"EntityCount"	"1"
+				}
+				"4"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/punt_cube_time.vmf"
+					"EntityCount"	"1"
+				}
+				"5"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/punt_cube_time.vmf"
+					"EntityCount"	"1"
+				}
+			}
+
+			"TargetName"		"puntcube"
+			"Offset"		"64 64 64"
+		}
+	}
+
+ 	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Fires rockets!"
+		"Type"		"ITEM_ROCKET_SENTRY"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Rocket Sentry"
+				"Model"
+				{
+					"ModelName"			"sentry.3ds"
+					"TextureName"		"sentryturret.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"ROCKET SENTRY"
+					"Image"		"palette/turret.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceTurret"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandTurret"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseTurret"
+					"SOUND_DELETED"					"P2Editor.RemoveTurret"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"InvalidSurface"		"CEILING WALL"
+			"CanAnchorOnBarriers"		"0"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/rocket_tripwire.vmf"
+					"EntityCount"	"4"
+				}
+			}
+
+			"TargetName"		"rocketturret"
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"				"0 0 0"
+					"CollideType"		"COLLIDE_PHYSICS"
+					"CollideAgainst"	"COLLIDE_PHYSICS"
+
+					"Surface"
+					{
+						"Pos"		"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 0"
+					}
+
+					"Surface"
+					{
+						"Pos"		"1 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 1"
+					}
+				}	
+			}
+		}
+	}
+
+ 	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Fires rockets! This one only looks in a straight line ahead."
+		"Type"		"ITEM_ROCKET_TRIPWIRE"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Rocket Tripwire"
+				"Model"
+				{
+					"ModelName"			"sentry.3ds"
+					"TextureName"		"sentryturret.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"ROCKET SENTRY"
+					"Image"		"palette/turret.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceTurret"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandTurret"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseTurret"
+					"SOUND_DELETED"					"P2Editor.RemoveTurret"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"InvalidSurface"		"CEILING WALL"
+			"CanAnchorOnBarriers"		"0"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/rocket_turret.vmf"
+					"EntityCount"	"4"
+				}
+			}
+
+			"TargetName"		"rocketturret"
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"				"0 0 0"
+					"CollideType"		"COLLIDE_PHYSICS"
+					"CollideAgainst"	"COLLIDE_PHYSICS"
+
+					"Surface"
+					{
+						"Pos"		"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 0"
+					}
+
+					"Surface"
+					{
+						"Pos"		"1 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 1"
+					}
+				}	
+			}
+		}
+	}
+
+	"Item"
+	{
+	"Filter"	"FGE;Felix Griffin;HMW;Carl Kenner;BEE 2"
+	"Author"	"HMW, Carl Kenner"
+	"Description"	"Made by HMW. Sends objects along a laser beam."
+		"Type"		"ITEM_SENDIFICATOR"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Sendificator"
+				"Model"
+				{
+					"ModelName"			"sendificator.3ds"
+					"TextureName"		"arm_4panel.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"SENDIFICATOR"
+					"Image"			"palette/sendificator.png"
+					"Position"  "3 4 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor_clean/sendificator.vmf"
+					"EntityCount"		"19"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+					//packer_additem:models/props/sendificator.mdl
+					//packer_additem:models/props/sendificator.dx90.vtx
+					//packer_additem:models/props/sendificator.phy
+					//packer_additem:models/props/sendificator.vvd
+					
+					//packer_additem:models/props/sendificator_beam.mdl
+					//packer_additem:models/props/sendificator_beam.dx90.vtx
+					//packer_additem:models/props/sendificator_beam.vvd
+					
+					//packer_additem:models/props/sendificator_cube0.mdl
+					//packer_additem:models/props/sendificator_cube0.dx90.vtx
+					//packer_additem:models/props/sendificator_cube0.vvd
+					
+					//packer_additem:models/props/sendificator_cube1.mdl
+					//packer_additem:models/props/sendificator_cube1.dx90.vtx
+					//packer_additem:models/props/sendificator_cube1.vvd
+					
+					//packer_additem:materials/models/hmw/props/sendificator.vmt
+					//packer_additem:materials/models/hmw/props/sendificator.vtf
+					//packer_additem:materials/models/hmw/props/sendificator_r.vmt
+					//packer_additem:materials/models/hmw/props/sendificator_r.vtf
+					//packer_additem:materials/models/hmw/props/sendificator_n.vmt
+					//packer_additem:materials/models/hmw/props/sendificator_n.vtf
+					//packer_additem:materials/models/hmw/props/sendificator_beam.vmt
+					//packer_additem:materials/models/hmw/props/sendificator_beam.vtf
+				}
+			}
+
+			"TargetName"		"sendtor"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"	"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"	"instance:sent;OnTrigger"
+					"Deactivate"	"instance:sent;OnUser2"
+				}
+			}
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Changes the skybox when triggered. Use a trigger at the entrance to change it as soon as the player enters."
+		"Type"			"ITEM_SKYBOX"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Skybox"
+				"Model"
+				{
+					"ModelName"		"skybox_block.3ds"
+					"TextureName"	"buttonpedestal.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"SKYBOX"
+					"Image"			"palette/skybox.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"OccupiesVoxel"			"0"
+			"CanAnchorOnBarriers"	"1"
+			"CanAnchorOnGoo"		"1"
+		}
+		"Properties"
+		{
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"1"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"3"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/skybox.vmf"
+					"EntityCount"		"2"
+					"BrushCount"		"0"
+					"BrushSideCount"	"0"
+				}
+			}
+
+			"TargetName"		"skybox"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+
+			"ConnectionPoints"
+			{
+				// outside voxel
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 6 0"
+					"SignageOffset"		"-2 7 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 2 0"
+					"SignageOffset"		"-2 3 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 0 0"
+					"SignageOffset"		"-2 1 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+
+				// sides
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "1"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+
+				// inside voxel
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"3 7 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"3 5 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"3 3 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"3 1 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+			}
+
+			"Offset"	"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Shows the skybox through a wall panel. Looks best inset a couple blocks."
+		"Type"		"ITEM_SKYBOX_WALL"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Skybox Wall"
+				"Model"
+				{
+					"ModelName"		"skybox_wall.3ds"
+					"TextureName"	"portal_door.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"SKYBOX WALL"
+					"Image"			"palette/skybox.png"
+					"Position"		"0 0 0"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"OccupiesVoxel"			"0"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/skybox_wall.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+			}
+
+			"TargetName"	"skywall"
+			"Offset"		"64 64 64"
+		}
+	}
+
+	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Lets the player use shadows."
+		"Type"		"ITEM_SOT"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Shadows of Time Activator"
+				"Model"
+				{
+					"ModelName"			"sot.3ds"
+					"TextureName"		"lightbridgeemitter.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"SHADOWS OF TIME DEVICE"
+					"Image"			"palette/sot.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"DesiredFacing"			"DESIRES_UP"
+			"OccupiesVoxel"			"0"
+		}
+		"Properties"
+		{
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/sot.vmf"
+					"EntityCount"	"1"
+				}
+			}
+
+			"TargetName"	"sot"
+			"Offset"		"64 64 64"
+		}
+	}
+
+   	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"A purple fizzler that clear's the player's "memory". For use in Shadows of Time maps."
+		"Type"		"ITEM_SOT_FIELD"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"SoT Field"
+				"Model"
+				{
+					"ModelName"		"sot_field.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"SHADOWS OF TIME FIZZLER"
+					"Image"		"palette/sotfield.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_6_POSITIONS"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/sot_field.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"sot_field"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"	"0"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"	"0"
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}
+
+ 	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Made by PsychoBR and updated by FelixGriffin so they work with the torches. Enjoy the explosions!"
+		"Type"		"ITEM_TNT_TURRET"
+		"ItemClass"	"ItemTurret"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"TNT Turret"
+				"Model"
+				{
+					"ModelName"			"redsentry.3ds"
+					"TextureName"		"sentryturret.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"TNT TURRET"
+					"Image"		"palette/redturret.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceTurret"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandTurret"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseTurret"
+					"SOUND_DELETED"					"P2Editor.RemoveTurret"
+				}
+			}
+			"MovementHandle"		"HANDLE_36_DIRECTIONS"
+			"InvalidSurface"		"CEILING WALL"
+			"CanAnchorOnBarriers"		"1"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor/fg_editor_mod/tnt_turret.vmf"
+					"EntityCount"	"4"
+				}
+			}
+
+			"TargetName"		"turret"
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"				"0 0 0"
+					"CollideType"		"COLLIDE_PHYSICS"
+					"CollideAgainst"	"COLLIDE_PHYSICS"
+
+					"Surface"
+					{
+						"Pos"		"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 0"
+					}
+
+					"Surface"
+					{
+						"Pos"		"1 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 1"
+					}
+				}	
+			}
+		}
+	}
+
+   	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"A fire source that never burns out. Can activate things when lit."
+		"Type"		"ITEM_TORCH"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Torch"
+				"Model"
+				{
+					"ModelName"		"buttonball.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"TORCH"
+					"Image"		"palette/torch.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/torch.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"torch"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:OnIgnited;OnTrigger"
+					"Deactivate"	"instance:OnExtinguished;OnTrigger"
+				}
+			}
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}
+
+   	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Sucks items through it. Select various types from this and Vacuum Tube 2."
+		"Type"		"ITEM_VACTUBE_1"
+		"ItemClass" "ItemButtonFloor"
+		"Editor"
+		{
+			"SubTypeProperty"       "ButtonType"
+			"SubType"
+            {
+                "Name"      "Vacuum Tube (Straight)"
+                "Model"
+                {
+                    "ModelName"     "vactube_1.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Palette"
+                {
+                    "Tooltip"   "VACUUM TUBE"
+                    "Image"     "palette/vactube1.png"
+                    "Position"  "0 0 0"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "SubType"
+            {
+                "Name"      "Vacuum Tube (Right Turn)"
+                "Model"
+                {
+                    "ModelName"     "vactube_2.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "SubType"
+            {
+                "Name"      "Vacuum Tube (Left Turn)"
+                "Model"
+                {
+                    "ModelName"     "vactube_3.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+			"ButtonType"
+            {
+                "DefaultValue"  "0"
+                "Index"         "0"
+            }
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_1.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.mdl
+				}
+				"1"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_1.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.mdl
+				"2"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_2.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.mdl
+				"3"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_2.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.mdl
+				"4"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_3.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.mdl
+				"5"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_3.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_90deg_01_glass.mdl
+			}
+
+			"TargetName"		"vactube1"
+			"Offset"	"64 64 64"
+		}
+	}
+
+   	"Item"
+	{
+"Filter"	"FGE;Felix Griffin"
+"Author"	"Felix Griffin"
+"Description"	"Sucks items through it. Select various types from this and Vacuum Tube 1."
+		"Type"		"ITEM_VACTUBE_2"
+		"ItemClass" "ItemButtonFloor"
+		"Editor"
+		{
+			"SubTypeProperty"       "ButtonType"
+			"SubType"
+            {
+                "Name"      "Vacuum Tube (Entrance)"
+                "Model"
+                {
+                    "ModelName"     "vactube_4.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Palette"
+                {
+                    "Tooltip"   "VACUUM TUBE"
+                    "Image"     "palette/vactube2.png"
+                    "Position"  "0 0 0"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "SubType"
+            {
+                "Name"      "Vacuum Tube (Exit)"
+                "Model"
+                {
+                    "ModelName"     "vactube_5.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+            "SubType"
+            {
+                "Name"      "Vacuum Tube (Two-way)"
+                "Model"
+                {
+                    "ModelName"     "vactube_6.3ds"
+                    "TextureName"   "buttons.png"
+                }
+                "Sounds"
+                {
+                    "SOUND_CREATED"                 "P2Editor.PlaceOther"
+                    "SOUND_EDITING_ACTIVATE"        "P2Editor.ExpandOther"
+                    "SOUND_EDITING_DEACTIVATE"      "P2Editor.CollapseOther"
+                    "SOUND_DELETED"                 "P2Editor.RemoveOther"
+                }
+            }
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+			"ButtonType"
+            {
+                "DefaultValue"  "0"
+                "Index"         "0"
+            }
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_4.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.mdl
+				"1"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_4.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.mdl
+				"2"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_5.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.mdl
+				"3"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_5.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_128_straight_glass.mdl
+				"4"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_6.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_tjunction_glass.dx90.vtx
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_tjunction_glass.vvd
+				// packer_additem:materials/models/props_bts/vactube_glass_bothsides/vactube_tjunction_glass.mdl
+				"5"
+				{
+					"Name"				"instances/p2editor/fg_editor_mod/vactube_6.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			"TargetName"		"vactube2"
+			"Offset"	"64 64 64"
+		}
+	}
+	
+	// Commenting these out since they don't work. Where's the instances for these? - TeamSpen
+
+	// "Item"
+	// {
+// "Filter"	"FGE;Felix Griffin"
+// "Author"	"Felix Griffin"
+// "Description"	"A modified version of TeamSpen's that's fluffed as FourthReaper's Surface Division Field."
+		// "Type"			"ITEM_PORTAL_DOOR_ENTRY_2"
+		// "Editor"
+		// {
+			// "SubType"
+			// {
+				// "Name"			"WorldPortal Door - Entry"
+				// "Model"
+				// {
+					// "ModelName"		"door.3ds"
+					// "TextureName"		"portal_door.png"
+				// }
+				// "Palette"
+				// {
+					// "Tooltip"	"WORLDPORTAL DOOR - ENTRY"
+					// "Image"		"palette/door.png"
+					// "Position"	"0 0 0"
+				// }
+			// }
+			// "MovementHandle"		"HANDLE_4_DIRECTIONS"
+			// "InvalidSurface"		"CEILING FLOOR"
+			// "DesiredFacing"			"DESIRES_UP"
+		// }
+		// "Properties"
+		// {
+			// "ConnectionCount"
+			// {
+				// "DefaultValue"		"0"
+				// "Index"		"1"
+			// }
+			// "StartEnabled"
+			// {
+				// "DefaultValue"		"1"
+				// "Index"		"2"
+			// }
+		// }
+		// "Exporting"
+		// {
+			// "Instances"
+			// {
+				// "0"
+				// {
+					// "Name"				"instances/p2editor/worldportal_door/worldportal_entry_sdf.vmf"
+					// "EntityCount"		"55"
+					// "BrushCount"		"48"
+					// "BrushSideCount"	"310"
+				// }
+			// }
+
+			// "TargetName"		"wp_door_entry_2"
+			// "Inputs"
+			// {
+				// "CONNECTION_STANDARD"
+				// {
+					// "Activate"		"instance:counter;Add"
+					// "Deactivate"		"instance:counter;Subtract"
+				// }
+			// }
+			// "Outputs"
+			// {
+				// "CONNECTION_STANDARD"
+				// {
+					// "Activate"		"instance:toggle_door_rl;OnTrigger"
+					// "Deactivate"		"instance:portal_partner_rl;OnTrigger"
+				// }
+			// }
+			// "Offset"		"64 64 64"
+			// "OccupiedVoxels"
+			// {
+				// "Voxel"
+				// {
+					// "Pos"		"0 0 0"
+					// "Surface"
+					// {
+						// "Normal"	"0 0 1"
+					// }
+				// }
+			// }
+			// "EmbeddedVoxels"
+			// {
+				// "Volume"
+				// {
+					// "Pos1"		"1 -1 0"
+					// "Pos2"		"-1 1 -1"
+				// }
+			// }
+
+			// "ConnectionPoints"
+			// {
+				// // top edge left to right
+				// "Point"
+				// {
+					// "Dir"				"-1 0 0"
+					// "Pos"				"8 6 0"
+					// "SignageOffset"		"9 7 0"
+					// "Priority"  "1"
+					// "GroupID"	"0"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"-1 0 0"
+					// "Pos"				"8 4 0"
+					// "SignageOffset"		"9 5 0"
+					// "Priority"  "1"
+					// "GroupID"	"0"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"-1 0 0"
+					// "Pos"				"8 2 0"
+					// "SignageOffset"		"9 3 0"
+					// "Priority"  "1"
+					// "GroupID"	"0"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"-1 0 0"
+					// "Pos"				"8 0 0"
+					// "SignageOffset"		"9 1 0"
+					// "Priority"  "1"
+					// "GroupID"	"0"
+				// }
+
+				// // left edge top to bottom
+				// "Point"
+				// {
+					// "Dir"				"0 1 0"
+					// "Pos"				"6 -1 0"
+					// "SignageOffset"		"7 -2 0"
+					// "Priority"  "0"
+					// "GroupID"	"1"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 1 0"
+					// "Pos"				"4 -1 0"
+					// "SignageOffset"		"5 -2 0"
+					// "Priority"  "1"
+					// "GroupID"	"1"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 1 0"
+					// "Pos"				"2 -1 0"
+					// "SignageOffset"		"3 -2 0"
+					// "Priority"  "2"
+					// "GroupID"	"1"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 1 0"
+					// "Pos"				"0 -1 0"
+					// "SignageOffset"		"1 -2 0"
+					// "Priority"  "3"
+					// "GroupID"	"1"
+				// }
+
+				// // right edge top to bottom
+				// "Point"
+				// {
+					// "Dir"				"0 -1 0"
+					// "Pos"				"6 8 0"
+					// "SignageOffset"		"7 9 0"
+					// "Priority"  "0"
+					// "GroupID"	"2"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 -1 0"
+					// "Pos"				"4 8 0"
+					// "SignageOffset"		"5 9 0"
+					// "Priority"  "1"
+					// "GroupID"	"2"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 -1 0"
+					// "Pos"				"2 8 0"
+					// "SignageOffset"		"3 9 0"
+					// "Priority"  "2"
+					// "GroupID"	"2"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 -1 0"
+					// "Pos"				"0 8 0"
+					// "SignageOffset"		"1 9 0"
+					// "Priority"  "3"
+					// "GroupID"	"2"
+				// }
+
+				// // bottom edge left to right
+				// "Point"
+				// {
+					// "Dir"				"1 0 0"
+					// "Pos"				"-1 6 0"
+					// "SignageOffset"		"-2 7 0"
+					// "Priority"  "2"
+					// "GroupID"	"3"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"1 0 0"
+					// "Pos"				"-1 4 0"
+					// "SignageOffset"		"-2 5 0"
+					// "Priority"  "2"
+					// "GroupID"	"3"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"1 0 0"
+					// "Pos"				"-1 2 0"
+					// "SignageOffset"		"-2 3 0"
+					// "Priority"  "2"
+					// "GroupID"	"3"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"1 0 0"
+					// "Pos"				"-1 0 0"
+					// "SignageOffset"		"-2 1 0"
+					// "Priority"  "2"
+					// "GroupID"	"3"
+				// }
+			// }
+		// }
+	// }
+
+	// "Item"
+	// {
+		// "Type"			"ITEM_PORTAL_DOOR_EXIT_2"
+		// "Editor"
+		// {
+			// "SubType"
+			// {
+				// "Name"			"WorldPortal Door - Exit"
+				// "Model"
+				// {
+					// "ModelName"		"doorentry.3ds"
+					// "TextureName"		"portal_door.png"
+				// }
+				// "Palette"
+				// {
+					// "Tooltip"	"WORLDPORTAL DOOR - EXIT"
+					// "Image"		"palette/door.png"
+					// "Position"	"0 0 0"
+				// }
+			// }
+			// "MovementHandle"		"HANDLE_4_DIRECTIONS"
+			// "InvalidSurface"		"CEILING FLOOR"
+			// "DesiredFacing"			"DESIRES_UP"
+		// }
+		// "Properties"
+		// {
+			// "ButtonType"
+			// {
+				// "DefaultValue"		"0"
+				// "Index"		"0"
+			// }
+			// "ConnectionCount"
+			// {
+				// "DefaultValue"		"0"
+				// "Index"		"1"
+			// }
+		// }
+		// "Exporting"
+		// {
+			// "Instances"
+			// {
+				// "0"
+				// {
+					// "Name"				"instances/p2editor/worldportal_door/worldportal_exit_sdf.vmf"
+					// "EntityCount"		"55"
+					// "BrushCount"		"48"
+					// "BrushSideCount"	"310"
+				// }
+			// }
+
+			// "TargetName"		"wp_door_exit_2"
+			// "Inputs"
+			// {
+				// "CONNECTION_STANDARD"
+				// {
+					// "Activate"		"instance:branch_toggle;ToggleTest"
+					// "Deactivate"		"instance:set_partner_rl;Trigger"
+				// }
+			// }
+			// "Offset"		"64 64 64"
+			// "OccupiedVoxels"
+			// {
+				// "Voxel"
+				// {
+					// "Pos"		"0 0 0"
+					// "Surface"
+					// {
+						// "Normal"	"0 0 1"
+					// }
+				// }
+			// }
+			// "EmbeddedVoxels"
+			// {
+				// "Volume"
+				// {
+					// "Pos1"		"1 -1 0"
+					// "Pos2"		"-1 1 -1"
+				// }
+			// }
+
+			// "ConnectionPoints"
+			// {
+				// // top edge left to right
+				// "Point"
+				// {
+					// "Dir"				"-1 0 0"
+					// "Pos"				"8 6 0"
+					// "SignageOffset"		"9 7 0"
+					// "Priority"  "1"
+					// "GroupID"	"0"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"-1 0 0"
+					// "Pos"				"8 4 0"
+					// "SignageOffset"		"9 5 0"
+					// "Priority"  "1"
+					// "GroupID"	"0"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"-1 0 0"
+					// "Pos"				"8 2 0"
+					// "SignageOffset"		"9 3 0"
+					// "Priority"  "1"
+					// "GroupID"	"0"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"-1 0 0"
+					// "Pos"				"8 0 0"
+					// "SignageOffset"		"9 1 0"
+					// "Priority"  "1"
+					// "GroupID"	"0"
+				// }
+
+				// // left edge top to bottom
+				// "Point"
+				// {
+					// "Dir"				"0 1 0"
+					// "Pos"				"6 -1 0"
+					// "SignageOffset"		"7 -2 0"
+					// "Priority"  "0"
+					// "GroupID"	"1"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 1 0"
+					// "Pos"				"4 -1 0"
+					// "SignageOffset"		"5 -2 0"
+					// "Priority"  "1"
+					// "GroupID"	"1"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 1 0"
+					// "Pos"				"2 -1 0"
+					// "SignageOffset"		"3 -2 0"
+					// "Priority"  "2"
+					// "GroupID"	"1"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 1 0"
+					// "Pos"				"0 -1 0"
+					// "SignageOffset"		"1 -2 0"
+					// "Priority"  "3"
+					// "GroupID"	"1"
+				// }
+
+				// // right edge top to bottom
+				// "Point"
+				// {
+					// "Dir"				"0 -1 0"
+					// "Pos"				"6 8 0"
+					// "SignageOffset"		"7 9 0"
+					// "Priority"  "0"
+					// "GroupID"	"2"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 -1 0"
+					// "Pos"				"4 8 0"
+					// "SignageOffset"		"5 9 0"
+					// "Priority"  "1"
+					// "GroupID"	"2"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 -1 0"
+					// "Pos"				"2 8 0"
+					// "SignageOffset"		"3 9 0"
+					// "Priority"  "2"
+					// "GroupID"	"2"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"0 -1 0"
+					// "Pos"				"0 8 0"
+					// "SignageOffset"		"1 9 0"
+					// "Priority"  "3"
+					// "GroupID"	"2"
+				// }
+
+				// // bottom edge left to right
+				// "Point"
+				// {
+					// "Dir"				"1 0 0"
+					// "Pos"				"-1 6 0"
+					// "SignageOffset"		"-2 7 0"
+					// "Priority"  "2"
+					// "GroupID"	"3"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"1 0 0"
+					// "Pos"				"-1 4 0"
+					// "SignageOffset"		"-2 5 0"
+					// "Priority"  "2"
+					// "GroupID"	"3"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"1 0 0"
+					// "Pos"				"-1 2 0"
+					// "SignageOffset"		"-2 3 0"
+					// "Priority"  "2"
+					// "GroupID"	"3"
+				// }
+				// "Point"
+				// {
+					// "Dir"				"1 0 0"
+					// "Pos"				"-1 0 0"
+					// "SignageOffset"		"-2 1 0"
+					// "Priority"  "2"
+					// "GroupID"	"3"
+				// }
+			// }
+		// }
+	// }
+} // This file was generated by Felix Griffin's Handy Converter Tool.

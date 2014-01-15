@@ -1,0 +1,27 @@
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\bin\Debug\BEE2.exe.config
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\bin\Debug\BEE2.exe
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\bin\Debug\BEE2.pdb
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\BEE2.csprojResolveAssemblyReference.cache
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\MainWindow.baml
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\MainWindow.g.cs
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\App.g.cs
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\BEE2_MarkupCompile.cache
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\BEE2.g.resources
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\BEE2.Properties.Resources.resources
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\BEE2.csproj.GenerateResource.Cache
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\BEE2.exe
+c:\users\benvlodgi\documents\visual studio 2012\Projects\BEE2\BEE2\obj\Debug\BEE2.pdb
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\bin\Debug\BEE2.exe.config
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\BEE2.exe
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\BEE2.pdb
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Project\portal 2\portal2_dlc2\BEE2\BEE2.exe.config
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Project\portal 2\portal2_dlc2\BEE2\BEE2.exe
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Project\portal 2\portal2_dlc2\BEE2\BEE2.pdb
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\BEE2.csprojResolveAssemblyReference.cache
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\MainWindow.baml
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\MainWindow.g.cs
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\App.g.cs
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\BEE2_MarkupCompile.cache
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\BEE2.g.resources
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\BEE2.Properties.Resources.resources
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application\BEE2\obj\Debug\BEE2.csproj.GenerateResource.Cache

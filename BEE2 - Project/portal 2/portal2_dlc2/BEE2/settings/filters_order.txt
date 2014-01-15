@@ -1,0 +1,21 @@
+All Items 
+(By Collection)
+  Portal 2
+  BEE
+  BEE 2
+  HMW
+  FGE
+  Miscellaneous
+  Items Matching Style
+(Groups)
+  Test Elements
+  Panels
+  Geometry
+  Logic
+  Custom
+(By Creator)
+  BenVlodgi & Rantis
+  Carl Kenner
+  Felix Griffin
+  Mevious
+  [*]

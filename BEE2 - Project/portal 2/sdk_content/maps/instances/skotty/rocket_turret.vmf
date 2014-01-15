@@ -1,0 +1,539 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5685"
+	"mapversion" "198"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "16"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "198"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxblobcount" "250"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_black_nofog"
+	group
+	{
+		"id" "7927"
+		editor
+		{
+			"color" "172 141 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "6700"
+	"classname" "env_entity_maker"
+	"angles" "0 0 0"
+	"EntityTemplate" "@RocketSentry_Missile_Template"
+	"parentname" "RocketSentry"
+	"PostSpawnDirection" "0 0 0"
+	"PostSpawnDirectionVariance" "0"
+	"PostSpawnInheritAngles" "1"
+	"PostSpawnSpeed" "$MissileSpeed"
+	"spawnflags" "0"
+	"targetname" "RocketSentry_Missile_Maker"
+	connections
+	{
+		"OnEntitySpawned" "RocketSentry_Missile_MakerSetParentAttachmentbarrel0.01-1"
+		"OnEntitySpawned" "RocketSentry_Missile_MakerSetParentRocketSentry0-1"
+		"OnEntitySpawned" "@RocketSentry_MissileAddOutputclassname RocketSentry_Missile0-1"
+	}
+	"origin" "-32 32 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "7292"
+	"classname" "env_beam"
+	"BoltWidth" "2"
+	"ClipStyle" "2"
+	"damage" "0"
+	"decalname" "Bigshot"
+	"framerate" "0"
+	"framestart" "0"
+	"HDRColorScale" "1.0"
+	"life" "0"
+	"LightningEnd" "RocketSentry_Beam_End"
+	"LightningStart" "RocketSentry_Missile_Maker"
+	"NoiseAmplitude" "0"
+	"Radius" "256"
+	"renderamt" "100"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"spawnflags" "3"
+	"StrikeTime" "1"
+	"targetname" "RocketSentry_Beam"
+	"targetpoint" "0 0 0"
+	"texture" "effects/bluelaser1.vmt"
+	"TextureScroll" "0"
+	"TouchType" "0"
+	"origin" "-16 32 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "7382"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "RocketSentry_Disable"
+	connections
+	{
+		"OnTrigger" "RocketSentryDisable0-1"
+		"OnTrigger" "RocketSentry_BeamTurnOff0-1"
+		"OnTrigger" "RocketSentry_EnableEnable4.67-1"
+		"OnTrigger" "RocketSentry_DisableDisable0-1"
+		"OnTrigger" "RocketSentry_StateSetValue04.67-1"
+	}
+	"origin" "16 32 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "7480"
+	"classname" "logic_branch"
+	"InitialValue" "1"
+	"targetname" "RocketSentry_Request"
+	connections
+	{
+		"OnFalse" "RocketSentry_DisableTrigger0-1"
+		"OnTrue" "RocketSentry_EnableTrigger0-1"
+	}
+	"origin" "16 0 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "7546"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "Enable"
+	connections
+	{
+		"OnTrigger" "RocketSentry_RequestSetValue10-1"
+	}
+	"origin" "32 -16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "7561"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "Disable"
+	connections
+	{
+		"OnTrigger" "RocketSentry_RequestSetValue00-1"
+	}
+	"origin" "16 -16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "7571"
+	"classname" "logic_branch"
+	"InitialValue" "1"
+	"targetname" "RocketSentry_State"
+	"origin" "32 0 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "7607"
+	"classname" "logic_branch_listener"
+	"Branch01" "RocketSentry_Request"
+	"Branch02" "RocketSentry_State"
+	"targetname" "RocketSentry_Toggler"
+	connections
+	{
+		"OnMixed" "RocketSentry_DisableTrigger0-1"
+		"OnMixed" "RocketSentry_EnableTrigger0-1"
+	}
+	"origin" "16 16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "7858"
+	"classname" "func_door"
+	"disableflashlight" "1"
+	"disablereceiveshadows" "1"
+	"disableshadowdepth" "1"
+	"disableshadows" "1"
+	"dmg" "0"
+	"drawinfastreflection" "0"
+	"forceclosed" "1"
+	"health" "0"
+	"ignoredebris" "1"
+	"lip" "-10000"
+	"locked_sentence" "0"
+	"loopmovesound" "0"
+	"movedir" "0 0 0"
+	"origin" "-32 32 48"
+	"parentname" "RocketSentry_Missile_Maker"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "9"
+	"shadowdepthnocache" "0"
+	"spawnflags" "4652"
+	"spawnpos" "1"
+	"speed" "9999"
+	"targetname" "RocketSentry_Beam_End"
+	"unlocked_sentence" "0"
+	"wait" "-1"
+	solid
+	{
+		"id" "7968"
+		side
+		{
+			"id" "901"
+			"plane" "(-32 32 52) (-36 36 44) (-28 36 44)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "900"
+			"plane" "(-32 28 44) (-28 36 44) (-36 36 44)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "899"
+			"plane" "(-36 36 44) (-32 32 52) (-32 28 44)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[-0.447214 0 -0.894427 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "898"
+			"plane" "(-32 28 44) (-32 32 52) (-28 36 44)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0.447214 0 -0.894427 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "172 141 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "172 141 0"
+		"groupid" "7927"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 6500]"
+	}
+}
+entity
+{
+	"id" "8038"
+	"classname" "func_instance_io_proxy"
+	"targetname" "proxy"
+	connections
+	{
+		"OnProxyRelay" "DisableTrigger0-1"
+		"OnProxyRelay" "EnableTrigger0-1"
+	}
+	"origin" "-16 -16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "8056"
+	"classname" "func_instance_parms"
+	"parm1" "$MissileSpeed integer 450"
+	"origin" "-32 -16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9000]"
+	}
+}
+entity
+{
+	"id" "5694"
+	"classname" "npc_rocket_turret"
+	"angles" "0 0 0"
+	"RocketLifetime" "1"
+	"RocketSpeed" "450"
+	"spawnflags" "0"
+	"targetname" "RocketSentry"
+	"origin" "0 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "6045"
+	"classname" "trigger_multiple"
+	"filtername" "rocket_turret_projectile_filter"
+	"origin" "0 0 40"
+	"spawnflags" "64"
+	"StartDisabled" "0"
+	"targetname" "RocketSentry_MissileFixer"
+	"wait" "1"
+	connections
+	{
+		"OnTrigger" "RocketSentry_Missile_MakerForceSpawn0.01-1"
+		"OnTrigger" "!activatorKill0-1"
+		"OnTrigger" "!selfDisable0-1"
+		"OnTrigger" "!selfEnable1-1"
+		"OnTrigger" "RocketSentry_Missile_MakerClearParent0-1"
+	}
+	solid
+	{
+		"id" "6043"
+		side
+		{
+			"id" "785"
+			"plane" "(-48 -48 -16) (-48 48 -16) (-48 48 96)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 0 1 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "784"
+			"plane" "(48 48 -16) (48 -48 -16) (48 -48 96)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 0 -1 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "783"
+			"plane" "(-48 48 -16) (-48 -48 -16) (48 -48 -16)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[1 0 0 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "782"
+			"plane" "(-48 -48 96) (-48 48 96) (48 48 96)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[1 0 0 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "781"
+			"plane" "(-48 48 96) (-48 48 -16) (48 48 -16)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 0 -1 0] 0.25"
+			"vaxis" "[1 0 0 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "780"
+			"plane" "(48 -48 96) (48 -48 -16) (-48 -48 -16)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 0 1 0] 0.25"
+			"vaxis" "[1 0 0 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "6060"
+	"classname" "filter_activator_class"
+	"filterclass" "rocket_turret_projectile"
+	"Negated" "Allow entities that match criteria"
+	"targetname" "rocket_turret_projectile_filter"
+	"origin" "-16 16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "5375"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "1"
+	"targetname" "RocketSentry_Enable"
+	connections
+	{
+		"OnTrigger" "RocketSentryEnable0.02-1"
+		"OnTrigger" "RocketSentrySetTarget!player0-1"
+		"OnTrigger" "RocketSentry_BeamTurnOn4.34-1"
+		"OnTrigger" "RocketSentry_DisableEnable4.34-1"
+		"OnTrigger" "RocketSentry_EnableDisable0-1"
+		"OnTrigger" "RocketSentry_StateSetValue14.34-1"
+	}
+	"origin" "32 32 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "5680"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "RocketSentry_Missile_MakerSetParentAttachmentbarrel0.03-1"
+		"OnMapSpawn" "RocketSentryAddOutputsolid 20-1"
+		"OnMapSpawn" "RocketSentry_Missile_MakerSetParentRocketSentry0.01-1"
+		"OnMapSpawn" "DisableTrigger0.05-1"
+	}
+	"origin" "0 16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}

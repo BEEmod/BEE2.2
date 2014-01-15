@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+$basetexture "models/props/fizzle2_skin002"
+$bumpmap "models/props/metal_box_normal"
+$selfillum 1
+}

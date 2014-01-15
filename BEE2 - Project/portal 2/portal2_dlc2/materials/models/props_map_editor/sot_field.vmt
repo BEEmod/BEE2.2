@@ -1,0 +1,4 @@
+VertexLitGeneric{
+	$basetexture	"models/props_map_editor/sot_field"
+	$alpha		"0.25"
+}

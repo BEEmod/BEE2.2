@@ -1,0 +1,264 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5685"
+	"mapversion" "2"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "8"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "2"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
+	"maxblobcount" "250"
+}
+entity
+{
+	"id" "163"
+	"classname" "func_instance_io_proxy"
+	"targetname" "proxy"
+	"origin" "8 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "174"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "enable"
+	connections
+	{
+		"OnTrigger" "bhbp.beam[&i]TurnOn0-1"
+	}
+	"origin" "24 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "185"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "disable"
+	connections
+	{
+		"OnTrigger" "bhbp.beam[&i]TurnOff0-1"
+	}
+	"origin" "40 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "86"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "bhbp.target_04.&i"
+	"origin" "12 24 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[10500 11500]"
+	}
+}
+entity
+{
+	"id" "90"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "bhbp.target_03.&i"
+	"origin" "-24 24 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[10500 11500]"
+	}
+}
+entity
+{
+	"id" "92"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "bhbp.target_02.&i"
+	"origin" "-24 -24 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[10500 11500]"
+	}
+}
+entity
+{
+	"id" "94"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "bhbp.target_01.&i"
+	"origin" "12 -24 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[10500 11500]"
+	}
+}
+entity
+{
+	"id" "124"
+	"classname" "env_beam"
+	"BoltWidth" "2"
+	"damage" "0"
+	"decalname" "Bigshot"
+	"framerate" "0"
+	"framestart" "0"
+	"HDRColorScale" "1.0"
+	"life" "0"
+	"LightningEnd" "bhbp.target_02.&i"
+	"LightningStart" "bhbp.target_01.&i"
+	"NoiseAmplitude" "1"
+	"Radius" "256"
+	"renderamt" "100"
+	"rendercolor" "107 1 89"
+	"renderfx" "0"
+	"spawnflags" "0"
+	"StrikeTime" "1"
+	"targetname" "bhbp.beam[&i]"
+	"targetpoint" "0 48 0"
+	"texture" "sprites/laserbeam.spr"
+	"TextureScroll" "35"
+	"TouchType" "0"
+	"origin" "0 48 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "139"
+	"classname" "env_beam"
+	"BoltWidth" "2"
+	"damage" "0"
+	"decalname" "Bigshot"
+	"framerate" "0"
+	"framestart" "0"
+	"HDRColorScale" "1.0"
+	"life" "0"
+	"LightningEnd" "bhbp.target_03.&i"
+	"LightningStart" "bhbp.target_02.&i"
+	"NoiseAmplitude" "1"
+	"Radius" "256"
+	"renderamt" "100"
+	"rendercolor" "107 1 89"
+	"renderfx" "0"
+	"spawnflags" "0"
+	"StrikeTime" "1"
+	"targetname" "bhbp.beam[&i]"
+	"targetpoint" "16 48 0"
+	"texture" "sprites/laserbeam.spr"
+	"TextureScroll" "35"
+	"TouchType" "0"
+	"origin" "16 48 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "142"
+	"classname" "env_beam"
+	"BoltWidth" "2"
+	"damage" "0"
+	"decalname" "Bigshot"
+	"framerate" "0"
+	"framestart" "0"
+	"HDRColorScale" "1.0"
+	"life" "0"
+	"LightningEnd" "bhbp.target_04.&i"
+	"LightningStart" "bhbp.target_03.&i"
+	"NoiseAmplitude" "1"
+	"Radius" "256"
+	"renderamt" "100"
+	"rendercolor" "107 1 89"
+	"renderfx" "0"
+	"spawnflags" "0"
+	"StrikeTime" "1"
+	"targetname" "bhbp.beam[&i]"
+	"targetpoint" "32 48 0"
+	"texture" "sprites/laserbeam.spr"
+	"TextureScroll" "35"
+	"TouchType" "0"
+	"origin" "32 48 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+	cordon
+	{
+		"name" "cordon"
+		"active" "1"
+		box
+		{
+			"mins" "(-1024 -1024 -1024)"
+			"maxs" "(1024 1024 1024)"
+		}
+	}
+}

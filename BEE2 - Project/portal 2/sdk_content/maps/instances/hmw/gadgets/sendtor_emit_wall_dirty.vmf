@@ -1,0 +1,156 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5685"
+	"mapversion" "21"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "16"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "21"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxblobcount" "250"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_black_nofog"
+}
+entity
+{
+	"id" "150"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"parentname" "source"
+	"spawnflags" "0"
+	"targetname" "beamStart"
+	"origin" "-16 16 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "2"
+	"classname" "env_portal_laser"
+	"angles" "0 0 0"
+	"AutoAimEnabled" "0"
+	"model" "models/props/laser_emitter.mdl"
+	"skin" "1"
+	"StartState" "1"
+	"targetname" "source"
+	"origin" "-16 0 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "4"
+	"classname" "logic_relay"
+	"spawnflags" "1"
+	"StartDisabled" "0"
+	"targetname" "@sendtor_init"
+	connections
+	{
+		"OnTrigger" "beamStartSetParentAttachmentlaser_attachment01"
+	}
+	"origin" "-16 -16 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "34"
+	"classname" "func_instance_io_proxy"
+	"targetname" "proxy"
+	connections
+	{
+		"OnProxyRelay" "fireTrigger0-1"
+		"OnProxyRelay" "sourceTurnOn0-1"
+		"OnProxyRelay" "sourceTurnOff0-1"
+		"OnProxyRelay" "sourceToggle0-1"
+	}
+	"origin" "16 16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "46"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "fire"
+	connections
+	{
+		"OnTrigger" "@sendtor_mutexTrigger0-1"
+		"OnTrigger" "beamStartRunScriptCode::sendtor_source <- self;0-1"
+		"OnTrigger" "@sendtor_scriptRunScriptCodetrace_start();0.01-1"
+	}
+	"origin" "-16 16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "82"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "@sendtor_mutex"
+	connections
+	{
+		"OnTrigger" "fireDisable0-1"
+		"OnTrigger" "fireEnable2-1"
+	}
+	"origin" "-16 -16 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}

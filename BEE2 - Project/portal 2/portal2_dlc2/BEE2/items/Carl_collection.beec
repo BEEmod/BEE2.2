@@ -1,0 +1,770 @@
+//@Style
+//      "Name"          "Carl's Extended Items"
+//		"Style"			"Clean"
+//      "Author"        "Carl Kenner"
+//      "Comment"       "Reflection Gel and Blocks, in the default style. Paint Fizzlers aren't here because they are implemented in part of the style, part of the normal fizzler, and part of the vbsp_styles.exe."
+//@EndStyle
+
+	////////////////////////////////// Carl's Items ////////////////////////////////////
+	
+	// Note: Reflection Gel only works if the paint dropper is modified to support it!
+	"Item"
+	{
+		"Type"			"ITEM_PAINT_SPLAT_REFLECTION"
+		"ItemClass"		"ItemPaintSplat"
+		"Filter"		"Carl Kenner;BEE 2;Custom"
+		"Author"		"Carl Kenner"
+		"Description"	"Reflection Gel is a cut gel that was going to be released with the Peer Review update. Lasers aimed at it reflect off it like a mirror. It is also slightly sticky, counteracting Propulsion Gel. It appears silvery-grey when falling, the same as conversion gel when on the ground (not usually noticeable unless both are in the same map) and like propulsion gel on light bridges and when splashed on your face."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Reflection Gel"
+				"Model"
+				{
+					"ModelName"			"paint_splatter_grey.3ds"
+					"TextureName"		"paint_dropper_grey.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"Weak Reflection Gel"
+					"Image"		"palette/paintsplat_reflection.png"
+					"Position"	"0 6 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.Gel_Placement"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandPaint"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapsePaint"
+					"SOUND_DELETED"					"P2Editor.RemovePaint"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"CanAnchorOnGoo"		"1"
+		}
+		"Properties"
+		{
+			"StartEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"				"0"
+			}
+			"PaintType"
+			{
+				"DefaultValue"		"4"
+				"Index"				"0"
+			}
+			"PaintExportType"
+			{
+				"DefaultValue"		"0"
+				"Index"				"1"
+			}
+			"PaintFlowType"
+			{
+				"DefaultValue"		"1"
+				"Index"				"0"
+			}
+			"DropperEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"				"0"
+			}
+			"AllowStreak"
+			{
+				"DefaultValue"		"1"
+				"Index"				"0"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor_clean/paint_splat_reflect.vmf"
+					"EntityCount"	"2"
+					// packer_additem:materials/paintblobs/blobsurface_stick.vmt
+					// packer_additem:materials/paintblobs/blobsurface_grey.vtf
+					// packer_additem:materials/paintblob.vmt
+					// packer_additem:materials/paintblobs/blobsurface_purple.vtf
+					// packer_additem:particles/paint_splats_fx_reflect.pcf
+					// packer_additem:particles/paint_bomb_fx_reflect.pcf
+					// packer_rename:particles/styles_particles.txt;maps/mapnamehere_particles.txt
+				}
+			}
+
+			"TargetName"		"psr"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"		"1 1 0"
+						"Normal"	"0 0 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 0"
+						"Normal"	"0 0 1"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 0"
+						"Normal"	"0 0 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 0"
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"Offset"		"64 64 64"
+		}
+	}
+
+	// Half and quarter sized blocks
+	// By Carl Kenner
+	"Item"
+	{
+		"ItemClass"	"ItemButtonFloor"
+		"Type"		"ITEM_128X64X64"
+		"Filter"		"Carl Kenner;BEE 2;Geometry"
+		"Author"		"Carl Kenner"
+		"Description"	"4x2x2,2x2x2 and 4x1x1 sized blocks. They match the portal colour of the surface they are mounted on. Same-coloured blocks can intersect without texture errors."
+		"Editor"
+		{
+			"SubTypeProperty"		"ButtonType"
+			"SubType"
+			{
+				"Name"			"Block 4x2x2"
+				"Model"
+				{
+					"ModelName"		"128x64x64.3ds"
+					"TextureName"	"a.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"Block 4x2x2 / 2x2x2 / 4x1x1"
+					"Image"			"palette/block.png"
+					"Position"		"3 7 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.DropperDisabled"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.DropperEnabled"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"			"Block 2x2x2"
+				"Model"
+				{
+					"ModelName"		"64x64x64.3ds"
+					"TextureName"	"a.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.DropperDisabled"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.DropperEnabled"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"			"Block 4x1x1"
+				"Model"
+				{
+					"ModelName"		"128x32x32.3ds"
+					"TextureName"	"a.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.DropperDisabled"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.DropperEnabled"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"		"HANDLE_8_POSITIONS"
+		}
+		"Properties"
+		{
+			"ButtonType"
+			{
+				"DefaultValue"	"0"
+				"Index"			"0"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_clean/128x64x64_white.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"1"
+				{
+					"Name"				"instances/p2editor_clean/128x64x64_black.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"2"
+				{
+					"Name"				"instances/p2editor_clean/64x64x64_white.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"3"
+				{
+					"Name"				"instances/p2editor_clean/64x64x64_black.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"4"
+				{
+					"Name"				"instances/p2editor_clean/128x32x32_white.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+				"5"
+				{
+					"Name"				"instances/p2editor_clean/128x32x32_black.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+			}
+
+			"TargetName"		"bl"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"CollideType"		"COLLIDE_NOTHING"
+					"CollideAgainst"	"COLLIDE_NOTHING"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_BLASTDOOR"
+		"ItemClass"	"itemlightstrip"
+		"Filter"	"Carl Kenner;BEE 2;Geometry"
+		"Author"	"Carl Kenner"
+		"Description"	"Vertical doors as an alternate to the normal doors."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Vertical Security Door"
+				"Model"
+				{
+					"ModelName"		"door_90deg.3ds"
+					"TextureName"		"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"VERTICAL SECURITY DOOR"
+					"Image"		"palette/door.png"
+					"Position"	"2 6 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_8_POSITIONS"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"0"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_clean/blastdoor.vmf"
+					"EntityCount"		"11"
+					"BrushCount"		"5"
+					"BrushSideCount"	"28"
+				}
+			}
+
+			"TargetName"		"dr"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"	"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 2 0"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+
+			"EmbedFace"
+			{
+				"Solid"
+				{
+					"Center"		"64 16 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"64 112 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"16 64 128"
+					"Dimensions"	"32 64 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"112 64 128"
+					"Dimensions"	"32 64 4"
+					"Grid"			"4x4"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// top edge left to right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 6 0"
+					"SignageOffset"		"9 7 0"
+					"Priority"  "1"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "1"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 2 0"
+					"SignageOffset"		"9 3 0"
+					"Priority"  "1"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 0 0"
+					"SignageOffset"		"9 1 0"
+					"Priority"  "1"
+					"GroupID"	"0"
+				}
+
+				// left edge top to bottom
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"6 -1 0"
+					"SignageOffset"		"7 -2 0"
+					"Priority"  "0"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "1"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"2 -1 0"
+					"SignageOffset"		"3 -2 0"
+					"Priority"  "2"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "3"
+					"GroupID"	"1"
+				}
+
+				// right edge top to bottom
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"6 8 0"
+					"SignageOffset"		"7 9 0"
+					"Priority"  "0"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"2 8 0"
+					"SignageOffset"		"3 9 0"
+					"Priority"  "2"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "3"
+					"GroupID"	"2"
+				}
+				// bottom edge left to right
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"0 6 0"
+					"SignageOffset"		"3 7 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"0 4 0"
+					"SignageOffset"		"3 5 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"0 2 0"
+					"SignageOffset"		"3 3 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"0 0 0"
+					"SignageOffset"		"3 1 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+			}
+		}
+	}
+	"Item"
+	{
+		"ItemClass"	"ItemButtonFloor"
+		"Type"		"ITEM_INCINERATOR"
+		"Filter"	"Carl Kenner;BEE 2"
+		"Author"	"Carl Kenner"
+		"Description" "An Aperture Science Emergency Inteligence Incinerator to drop your Companion Cube in. Inputs open/close the iris, outputs trigger when cubes, spheres and cores are dropped into it."
+		"Editor"
+		{
+			"SubTypeProperty"		"ButtonType"
+			"SubType"
+			{
+				"Name"			"Emergency Intelligence Incinerator"
+				"Model"
+				{
+					"ModelName"		"buttonweight.3ds"
+					"TextureName"	"buttonweight.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"Emergency Intelligence Incinerator"
+					"Image"			"palette/portal_button.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"		"Companion Cube Incinerator"
+				"Model"
+				{
+					"ModelName"		"buttoncube.3ds"
+					"TextureName"	"button_cube.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"		"Sphere and Core Incinerator"
+				"Model"
+				{
+					"ModelName"		"buttonball.3ds"
+					"TextureName"	"button_ball.png"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+			"ButtonType"
+			{
+				"DefaultValue"	"0"
+				"Index"			"0"
+			}
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"0"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_clean/incinerator.vmf"
+					"EntityCount"		"3"
+					"BrushCount"		"41"
+					"BrushSideCount"	"286"
+				}
+				"1"
+				{
+					"Name"				"instances/p2editor_clean/incinerator.vmf"
+					"EntityCount"		"3"
+					"BrushCount"		"41"
+					"BrushSideCount"	"286"
+				}
+				"2"
+				{
+					"Name"				"instances/p2editor_clean/incinerator_cc.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"12"
+					"BrushSideCount"	"88"
+				}
+				"3"
+				{
+					"Name"				"instances/p2editor_clean/incinerator_cc.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"12"
+					"BrushSideCount"	"88"
+				}
+				"4"
+				{
+					"Name"				"instances/p2editor_clean/incinerator_ball.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"18"
+					"BrushSideCount"	"152"
+				}
+				"5"
+				{
+					"Name"				"instances/p2editor_clean/incinerator_ball.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"18"
+					"BrushSideCount"	"152"
+				}
+			}
+
+			"TargetName"		"ii"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:p;OnTrigger"
+					"Deactivate"	"instance:p;OnUser1"
+				}
+			}
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}

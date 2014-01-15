@@ -1,0 +1,493 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5685"
+	"mapversion" "117"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "8"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "117"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxblobcount" "250"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_black_nofog"
+}
+entity
+{
+	"id" "1310"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "tur_brch_kill"
+	"origin" "-16 -8 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "1393"
+	"classname" "logic_branch_listener"
+	"Branch01" "turret_brch_xplod"
+	"targetname" "turret_brch-list_xplod"
+	connections
+	{
+		"OnAllTrue" "turret_som_explosionPlaySound3-1"
+		"OnAllTrue" "turret_som_altertStopSound3-1"
+		"OnAllTrue" "turret_explosionExplode3-1"
+		"OnAllTrue" "turret_fireStartFire2.9-1"
+		"OnAllTrue" "turretDisable1-1"
+		"OnAllTrue" "turret_som_altertPlaySound0-1"
+		"OnAllTrue" "turretSelfDestructImmediately3-1"
+		"OnAllTrue" "turret_sparkSparkOnce3-1"
+		"OnAllTrue" "turret_lightTurnOn0-1"
+		"OnAllTrue" "tur_brch_killSetValue10-1"
+	}
+	"origin" "16 -8 -48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "1425"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "tur_brch_alert"
+	connections
+	{
+		"OnTrue" "tur_brch_alertSetValue10-1"
+		"OnFalse" "tur_brch_alertSetValue00-1"
+	}
+	"origin" "-16 8 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "899"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "turret_lightTurnOff3-1"
+	}
+	"origin" "-16 0 -8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "1093"
+	"classname" "func_instance_io_proxy"
+	"targetname" "proxy"
+	"origin" "16 8 80"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "1095"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "relay_deactivated"
+	connections
+	{
+		"OnTrigger" "proxyProxyRelay0-1"
+	}
+	"origin" "0 8 80"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1097"
+	"classname" "logic_branch"
+	"targetname" "branch_pressed"
+	connections
+	{
+		"OnTrue" "relay_deactivatedTrigger0-1"
+		"OnTrue" "relay_activatedTrigger0.01-1"
+		"OnFalse" "relay_activatedTrigger0-1"
+	}
+	"origin" "16 -8 80"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1099"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "relay_activated"
+	connections
+	{
+		"OnTrigger" "proxyProxyRelay0-1"
+	}
+	"origin" "0 -8 80"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "340"
+	"classname" "light_dynamic"
+	"_cone" "360"
+	"_inner_cone" "300"
+	"_light" "255 0 0 2000"
+	"angles" "0 0 0"
+	"brightness" "2"
+	"distance" "300"
+	"parentname" "turret"
+	"pitch" "180"
+	"spawnflags" "1"
+	"spotlight_radius" "800"
+	"style" "4"
+	"target" "turret_light_target"
+	"targetname" "turret_light"
+	"origin" "-16 0 -24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "571"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "2"
+	"MaxDelay" "3"
+	"parentname" "turret"
+	"spawnflags" "256"
+	"targetname" "turret_spark"
+	"TrailLength" "2"
+	"origin" "-8 0 -32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "771"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"parentname" "turret"
+	"spawnflags" "0"
+	"targetname" "turret_light_target"
+	"origin" "-40 0 -24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "54"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "props/relaxing_alarm_clock_lp_01.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "300"
+	"spawnflags" "16"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "turret_som_altert"
+	"volstart" "0"
+	"origin" "0 -8 -16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "57"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "level/explode_1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1000"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "turret_som_explosion"
+	"volstart" "10"
+	"origin" "0 8 -16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "60"
+	"classname" "env_explosion"
+	"fireballsprite" "sprites/zerogxplode.spr"
+	"iMagnitude" "500"
+	"iRadiusOverride" "400"
+	"parentname" "turret"
+	"rendermode" "0"
+	"spawnflags" "64"
+	"targetname" "turret_explosion"
+	"origin" "-8 0 -24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "62"
+	"classname" "env_fire"
+	"damagescale" "0"
+	"drawinfastreflection" "1"
+	"fireattack" "0"
+	"firesize" "2000"
+	"firetype" "0"
+	"health" "1"
+	"ignitionpoint" "0"
+	"parentname" "turret"
+	"spawnflags" "24"
+	"StartDisabled" "0"
+	"targetname" "turret_fire"
+	"origin" "-8 0 -48"
+	editor
+	{
+		"color" "0 180 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "64"
+	"classname" "logic_branch_listener"
+	"Branch01" "tur_brch_alert"
+	"targetname" "turret_brch-list_alert"
+	connections
+	{
+		"OnAllTrue" "branch_pressedSetValue10.01-1"
+		"OnAllTrue" "branch_pressedTest0-1"
+		"OnAllTrue" "proxyProxyRelay0-1"
+		"OnAllFalse" "branch_pressedSetValue00.01-1"
+		"OnAllFalse" "relay_deactivatedTrigger0-1"
+		"OnAllFalse" "relay_deactivatedTrigger0-1"
+		"OnAllFalse" "branch_pressedSetValue00-1"
+		"OnAllFalse" "branch_pressedSetValue00.01-1"
+		"OnAllFalse" "relay_deactivatedTrigger0-1"
+	}
+	"origin" "16 8 -48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "66"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "turret_brch_xplod"
+	"origin" "16 -8 -16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "4"
+	"classname" "point_template"
+	"spawnflags" "2"
+	"targetname" "template_turret"
+	"Template01" "turret"
+	"Template02" "turret_som_altert"
+	"Template03" "turret_som_explosion"
+	"Template04" "turret_som_explosion"
+	"Template05" "turret_fire"
+	"Template06" "turret_fire"
+	"Template07" "turret_brch_xplod"
+	"Template08" "turret_brch-list_xplod"
+	"Template09" "relay_deactivated"
+	"Template10" "relay_activated"
+	"Template11" "turret_light"
+	"Template12" "turret_spark"
+	"Template13" "turret_explosion"
+	"Template14" "turret_light_target"
+	"origin" "0 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "18"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "@relay_spawn_3"
+	connections
+	{
+		"OnTrigger" "template_turretForceSpawn0-1"
+	}
+	"origin" "16 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "2"
+	"classname" "npc_portal_turret_floor"
+	"AllowShootThroughPortals" "0"
+	"angles" "0 180 0"
+	"CollisionType" "0"
+	"DamageForce" "1"
+	"DisableMotion" "0"
+	"Gagged" "0"
+	"LoadAlternativeModels" "0"
+	"ModelIndex" "0"
+	"PickupEnabled" "1"
+	"rendercolor" "200 0 0"
+	"SkinNumber" "0"
+	"spawnflags" "160"
+	"targetname" "turret"
+	"TurretRange" "1024"
+	"UsedAsActor" "0"
+	"UseSuperDamageScale" "0"
+	connections
+	{
+		"OnPhysGunPickup" "turretSelfDestructImmediately4-1"
+		"OnPhysGunPickup" "turretDisable3-1"
+		"OnPhysGunPickup" "turret_brch_xplodSetValue10-1"
+		"OnExplode" "tur_brch_alertSetValue00-1"
+		"OnRetire" "tur_brch_alertSetValue00-1"
+		"OnTipped" "tur_brch_alertSetValue00.01-1"
+		"OnPhysGunPickup" "tur_brch_alertSetValue00-1"
+		"OnDeploy" "tur_brch_alertSetValue10-1"
+		"OnTipped" "tur_brch_killSetValue10.01-1"
+		"OnTipped" "turret_brch_xplodSetValue10-1"
+		"OnExplode" "turret_brch_xplodSetValue10-1"
+	}
+	"origin" "0 0 -61"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}

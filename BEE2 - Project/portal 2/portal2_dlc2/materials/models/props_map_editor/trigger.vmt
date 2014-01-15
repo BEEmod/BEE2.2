@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+$translucent 1
+$alpha 0.5
+$basetexture "models/props_map_editor/trigger"
+}

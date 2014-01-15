@@ -1,0 +1,198 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5685"
+	"mapversion" "11"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "32"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "11"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxblobcount" "250"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_black_nofog"
+}
+entity
+{
+	"id" "2"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/p2editor/fg_editor_mod/global_ents_choreo.vmf"
+	"fixup_style" "2"
+	"origin" "-128 128 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "18"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/p2editor/fg_editor_mod/global_ents_skybox.vmf"
+	"fixup_style" "2"
+	"origin" "64 -64 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "31"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/portal_deflection_cube/global_ents.vmf"
+	"fixup_style" "0"
+	"origin" "192 -64 192"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "62"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/hmw/gadgets/sendtor_manager.vmf"
+	"fixup_style" "0"
+	"origin" "0 0 -64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "93"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/itemdropper/faith_cube.vmf"
+	"fixup_style" "0"
+	"origin" "64 -192 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "106"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/itemdropper/bumbleball.vmf"
+	"fixup_style" "0"
+	"origin" "64 -288 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "113"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/inferno/cube.vmf"
+	"fixup_style" "0"
+	"origin" "-96 -96 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "123"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/inferno/cube_nolemon.vmf"
+	"fixup_style" "0"
+	"origin" "-96 -224 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "130"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/itemdropper/bounce_cube.vmf"
+	"fixup_style" "0"
+	"origin" "-224 -96 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "137"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/itemdropper/speed_cube.vmf"
+	"fixup_style" "0"
+	"origin" "-224 -224 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}

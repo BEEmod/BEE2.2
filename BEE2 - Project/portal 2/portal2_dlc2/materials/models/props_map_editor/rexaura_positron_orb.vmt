@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	$basetexture "models/props_map_editor/rexaura_positron_orb"
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedTextureVar" "$basetexture"
+			"animatedTextureFrameNumVar" "$frame"
+			"animatedTextureFrameRate" "5"
+		}
+	} 
+}

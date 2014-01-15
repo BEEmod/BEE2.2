@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+	// original shader: basetimeslightmap
+	"$basetexture" "models/props_map_editor/dev_glassfrosted01a"
+	"$surfaceprop" "glass"
+}
