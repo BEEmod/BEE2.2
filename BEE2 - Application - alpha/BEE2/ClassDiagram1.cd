@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BufferedGraphicsContextExample.Bucket" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAyAAAAAACAIAAAAQBACCIAAAAAAAADAAABAAAAAAAA=</HashCode>
+      <FileName>Bucket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEE2.Form1" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BYCCAj0gACAAABAIAgGSgAMyDcB6YIAEAnQMBjJAEkA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEE2.PanelItemHolder" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAQAkAAAgIMCABAABCGABBAGAAAdlAAAQGEAAA=</HashCode>
+      <FileName>PanelItemHolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEE2.PanelItemHolder_Visual" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAABCAAgJAAqJAQIQAAIAAAEAAAiBAREAAAAEEwAA=</HashCode>
+      <FileName>PanelItemHolder_Visual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEE2.Program" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEE2.PuzzleItem" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MBCCDABQCAQAAAgQAAAAAAAAAACEQAAAgEAACAAAQBg=</HashCode>
+      <FileName>PuzzleItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEE2.Properties.Resources" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEE2.Properties.Settings" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
