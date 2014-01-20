@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BEE2
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for OptionsWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class OptionsWindow : Window
     {
-        public MainWindow()
+        public OptionsWindow()
         {
             InitializeComponent();
-        }
-
-        private void OptionsMenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            OptionsWindow ow = new OptionsWindow();
-            ow.ShowDialog();
         }
     }
 }
