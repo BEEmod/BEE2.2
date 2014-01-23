@@ -30,8 +30,8 @@ namespace BEE2
                     style = style.BaseStyle;
                     if (style == null)
                         item = Items.FirstOrDefault();//just grab the first one you can find
-                    //TODO: instead, add a default property to styled items, and grab default item instead
-                    //      do this incase there are more than one branch with a styled version
+                        //TODO: instead, add a default property to styled items, and grab default item instead
+                        //      do this incase there are more than one branch with a styled version
                 }
             } while (item == null); //There should not ever be an infinite loop, because PuzzleItems shouldn't
             //ever be created without atleast one StyledPuzzleItem

@@ -32,6 +32,6 @@
                 <TextBlock Text="All Items" HorizontalAlignment="Center" VerticalAlignment="Center" />
             </Border>
         </Grid>
-
+        
     </Grid>
 </Window>
