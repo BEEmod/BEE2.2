@@ -1,1 +1,17 @@
 C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Project\portal 2\portal2_dlc2\BEE2\BEE2.exe.config
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\BEE2.csprojResolveAssemblyReference.cache
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\AboutBox.baml
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\MainWindow.baml
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\OptionsWindow.baml
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\AboutBox.g.cs
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\MainWindow.g.cs
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\OptionsWindow.g.cs
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\App.g.cs
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\BEE2_MarkupCompile.cache
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\BEE2.g.resources
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\BEE2.Properties.Resources.resources
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\BEE2.csproj.GenerateResource.Cache
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Project\portal 2\portal2_dlc2\BEE2\BEE2.exe
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Project\portal 2\portal2_dlc2\BEE2\BEE2.pdb
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\BEE2.exe
+C:\Users\BenVlodgi\Documents\GitHub\BEE2\BEE2 - Application - beta\BEE2\obj\Debug\BEE2.pdb

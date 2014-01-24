@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
 using System.Windows;
+using System.Runtime.InteropServices;
+using System.Windows.Media.Imaging;
 
 namespace BEE2
 {
@@ -18,6 +20,12 @@ namespace BEE2
         public static List<StyledPuzzleItem> StyledPuzzleItems { get; private set; }
         public static string NotOnPaletteEntry { get { return "999 999 999"; } } //will be removed in the end and never seen in the exported editoritems
 
+        public static string[] BaseModUI { get; private set; }
+        public static Dictionary<string, string> PreferredImages { get; private set; }
+        public static PackageFile DLC2PackageFile { get; private set; }
+        public static string MissingImagePath { get; private set; }
+
+        #region Directories
         public static string Portal2Directory { get; private set; }
         //In /Portal 2
         public static string DLC2Directory { get; private set; }
@@ -29,10 +37,10 @@ namespace BEE2
         public static string PaletteDirectory { get; private set; }
         public static string SettingsDirectory { get; private set; }
         public static string ItemsDirectory { get; private set; }
+        public static string VisualResourcesDirectory { get; private set; }
+        #endregion
 
-        public static Dictionary<string, string> PreferredImages { get; private set; }
-
-
+        #region Paths
         //In /Portal 2
         private const string DLC2_PATH = "portal2_dlc2";
         private const string SIXENSE_PATH = "portal2_sixense";
@@ -45,11 +53,13 @@ namespace BEE2
         private const string PALETTE_PATH = "palettes";
         private const string SETTINGS_PATH = "settings";
         private const string ITEMS_PATH = "items";
+        private const string VISUAL_RESOURCES_PATH = "visual_resources";
 
         private const string LOG_NAME = "log.txt";
         private const string SETTINGS_FILE_NAME = "BEE2_settings.txt";
+        private const string MISSING_IMAGE_NAME = "budget_error.png";
+        #endregion
 
-        private static string[] _baseModUI;
         private static string[] _settings;
 
         #region Constructor
@@ -58,10 +68,14 @@ namespace BEE2
             // Set directories
 
             #region In /BEE2
+            //These used to include the Portal2Directory, however, that cannot be loaded until the settings have been loaded from the 
+            //SettingsDirectory, so now this step is a bit silly.
             StylesDirectory = STYLES_PATH;
             PaletteDirectory = PALETTE_PATH;
             SettingsDirectory = SETTINGS_PATH;
             ItemsDirectory = ITEMS_PATH;
+            VisualResourcesDirectory = VISUAL_RESOURCES_PATH;
+            MissingImagePath = VisualResourcesDirectory + '\\' + MISSING_IMAGE_NAME;
             #endregion
 
             LoadSettings();
@@ -149,10 +163,13 @@ namespace BEE2
             DLC2ResourceDirectory = Portal2Directory + '\\' + DLC2_RESOURCE_PATH;
             #endregion
 
+            DLC2PackageFile = new PackageFile(DLC2Directory);
+
             LoadStyles();
             LoadStyledPuzzleItems();
             LoadPreferredImages();
             LoadBaseModUI();
+
         }
         #endregion
 
@@ -289,7 +306,7 @@ namespace BEE2
 
         public static void LoadBaseModUI()
         {
-            _baseModUI = File.ReadAllLines(Portal2Directory + DLC2ResourceDirectory + "\\basemodui_" + Language + ".txt");
+            BaseModUI = File.ReadAllLines(Portal2Directory + DLC2ResourceDirectory + "\\basemodui_" + Language + ".txt");
         }
         #endregion
 
@@ -302,10 +319,36 @@ namespace BEE2
         public static void ChangeLanguage(string language)
         {
             ResourceFile.ChangeValue(_settings, "language", language.ToLower());
+            Language = language;
         }
         #endregion
 
         #region Utility
+        [DllImport("gdi32")]
+        static extern int DeleteObject(IntPtr o);
+
+        /// <summary> Transforms a Bitmap object into a BitmapSource object which can be used in wpf applications</summary>
+        /// http://khason.net/blog/how-to-use-systemdrawingbitmap-hbitmap-in-wpf/
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static BitmapSource LoadBitmap(System.Drawing.Bitmap source)
+        {
+            IntPtr ip = source.GetHbitmap();
+            BitmapSource bs = null;
+            try
+            {
+                bs = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(ip,
+                   IntPtr.Zero, Int32Rect.Empty,
+                   System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions());
+            }
+            finally
+            {
+                DeleteObject(ip);
+            }
+
+            return bs;
+        }
+
         /// <summary>Removes inline comments and returns the result</summary>
         /// <param name="body"></param>
         /// <returns></returns>

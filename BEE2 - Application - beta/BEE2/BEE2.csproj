@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,13 +55,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AboutBox.xaml.cs">
+      <DependentUpon>AboutBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="INotify.cs" />
+    <Compile Include="PackageFile.cs" />
+    <Compile Include="PaletteLayout.cs" />
     <Compile Include="PuzzleItem.cs" />
     <Compile Include="ResourceFile.cs" />
     <Compile Include="Style.cs" />
     <Compile Include="StyledPuzzleItem.cs" />
     <Compile Include="StyledSubPuzzleItem.cs" />
     <Compile Include="VtfLib.cs" />
+    <Page Include="AboutBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

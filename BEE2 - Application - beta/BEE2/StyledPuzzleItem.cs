@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BEE2
 {
-    public class StyledPuzzleItem
+    public class StyledPuzzleItem : INotify
     {
         #region Properties
         public string TypeName { get; private set; }
@@ -23,6 +23,18 @@ namespace BEE2
             {
                 _subcatagoryIndex = value > SubcatagoryIndexMax ? SubcatagoryIndexMax :
                     _subcatagoryIndex < 0 ? 0 : value;
+                Item = StyledSubPuzzleItems[_subcatagoryIndex];
+            }
+        }
+
+        private StyledSubPuzzleItem _item;
+        public StyledSubPuzzleItem Item
+        {
+            get { return _item; }
+            set
+            {
+                _item = value;
+                RaisePropertyChanged("Item");
             }
         }
         #endregion
