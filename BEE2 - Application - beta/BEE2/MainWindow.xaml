@@ -35,12 +35,26 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300" />
                 <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0" VerticalAlignment="Top">
                 <Image Source="resources/menu.png" Height="600" Width="300" />
                 <TextBlock Text="Outgoing Palette" HorizontalAlignment="Center" VerticalAlignment="Center" />
             </Grid>
-            <Border Grid.Column="1"  BorderThickness="1" BorderBrush="CadetBlue">
+            <ListView Grid.Column="1" ItemsSource="{Binding PuzzleItems}">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Width="{Binding (FrameworkElement.ActualWidth), 
+                            RelativeSource={RelativeSource AncestorType=ScrollContentPresenter}}"
+                            ItemWidth="{Binding (ListView.View).ItemWidth, 
+                            RelativeSource={RelativeSource AncestorType=ListView}}"
+                            MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}"
+                            ItemHeight="{Binding (ListView.View).ItemHeight, 
+                            RelativeSource={RelativeSource AncestorType=ListView}}" />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <Border Grid.Column="2"  BorderThickness="1" BorderBrush="CadetBlue">
                 <ListBox ItemsSource="{Binding PuzzleItems}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>

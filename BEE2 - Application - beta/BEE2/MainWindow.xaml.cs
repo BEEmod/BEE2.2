@@ -24,7 +24,7 @@ namespace BEE2
         public MainWindow()
         {
             InitializeComponent();
-
+            string[] d = Global.BaseModUI;
         }
 
         private void ExitMenuItem_Click(object sender, RoutedEventArgs e)
