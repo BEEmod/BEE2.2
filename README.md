@@ -1,6 +1,8 @@
 BEE2
 ====
 
+[![Join the chat at https://gitter.im/BenVlodgi/BEE2](https://badges.gitter.im/BenVlodgi/BEE2.svg)](https://gitter.im/BenVlodgi/BEE2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A Portal 2 Mod Tool
 
 The BEEMOD originally began with creators August Loolam and Benjamin Thomas Blodgett, and was released in August of 2012 as an addon for the Portal 2 PTI (a simple map making tool).
