@@ -1,0 +1,2982 @@
+//@Style
+//		"Style"			"1970s"
+//		"Base"			"1950s"
+//      "Name"          "1970s"
+//      "Author"        "Carl Kenner"
+//      "Comment"       "Underground orange gel enrichment sphere from 1975, now for testing homeless people in exchange for $60, with the voice of Cave Johnson. Plus added Reflection Gel and Paint Fizzlers. This is when they started using more random colours and materials on their walls, and ceilings are different. Elements are now made of yellow plastic, and buttons are no longer recessed into holes in the floor. Modern white indicator signs are starting to be used. Lights are now white, and the fog is grey. They still use gel instead of faith plates, and all other items are still old-style. The glass looks better, and stairs are no longer made of grating."
+//@EndStyle
+
+	"Item"
+	{
+		"ItemClass"		"ItemPedestalButton"
+		"Type"			"ITEM_BUTTON_PEDESTAL"
+		"Filter"		"Portal 2;Test Elements"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"A small button on a stand that can be pushed by the player. It is active for a configurable time, or indefinitely active once pushed."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_pedestal_button"
+				"Model"
+				{
+					"ModelName"		"switch.3ds"
+					"TextureName"	"buttonpedestal.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL2_PuzzleEditor_Palette_pedestal_button"
+					"Image"			"palette/pedestal_button.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"1"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/pedestal_button.vmf"
+					"EntityCount"		"7"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+			}
+
+			"TargetName"		"bt"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:relay_activated;OnTrigger"
+					"Deactivate"	"instance:relay_deactivated;OnTrigger"
+				}
+			}
+
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+						"Pos"		"0 1 0"
+					}
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+						"Pos"		"0 2 0"
+					}
+
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 1 0"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 2 0"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 1 1"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 2 1"
+					}
+				}
+			}
+
+			"ConnectionPoints"
+			{
+				// outside voxel
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 6 0"
+					"SignageOffset"		"-2 7 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 2 0"
+					"SignageOffset"		"-2 3 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 0 0"
+					"SignageOffset"		"-2 1 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+
+				// sides
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "1"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+
+				// inside voxel
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"3 7 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"3 5 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"3 3 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"3 1 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+			}
+
+			"Offset"	"64 64 64"
+		}
+	}
+	"Item"
+	{
+		"ItemClass"	"ItemButtonFloor"
+		"Type"		"ITEM_BUTTON_FLOOR"
+		"Filter"		"Portal 2;Test Elements"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"Big pressure buttons activated by players or cubes. Cube buttons are only activated by cubes, sphere buttons only by spheres. These use grates with holes to control which cubes can push cube/sphere buttons. Due to lack of finances buttons now sit on top of the floor without recesses."
+		"Editor"
+		{
+			"SubTypeProperty"		"ButtonType"
+			"SubType"
+			{
+				"Name"			"PORTAL2_PuzzleEditor_Item_portal_button"
+				"Model"
+				{
+					"ModelName"		"buttonweight.3ds"
+					"TextureName"	"buttonweight.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL2_PuzzleEditor_Palette_portal_button"
+					"Image"			"palette/portal_button.png"
+					"Position"		"1 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_cube_button"
+				"Model"
+				{
+					"ModelName"		"buttoncube.3ds"
+					"TextureName"	"button_cube.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL2_PuzzleEditor_Palette_cube_button"
+					"Image"			"palette/box_socket.png"
+					"Position"		"2 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_sphere_button"
+				"Model"
+				{
+					"ModelName"		"buttonball.3ds"
+					"TextureName"	"button_ball.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL2_PuzzleEditor_Palette_sphere_button"
+					"Image"			"palette/ball_socket.png"
+					"Position"		"3 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"	"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"ButtonType"
+			{
+				"DefaultValue"	"0"
+				"Index"			"0"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/floor_button_white_intact.vmf"
+					"EntityCount"		"3"
+					"BrushCount"		"41"
+					"BrushSideCount"	"286"
+				}
+				"1"
+				{
+					"Name"				"instances/p2editor_1970/floor_button_black_intact.vmf"
+					"EntityCount"		"3"
+					"BrushCount"		"41"
+					"BrushSideCount"	"286"
+				}
+				"2"
+				{
+					"Name"				"instances/p2editor_1970/floor_cube_button_white.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"12"
+					"BrushSideCount"	"88"
+				}
+				"3"
+				{
+					"Name"				"instances/p2editor_1970/floor_cube_button_black.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"12"
+					"BrushSideCount"	"88"
+				}
+				"4"
+				{
+					"Name"				"instances/p2editor_1970/floor_ball_button_white.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"18"
+					"BrushSideCount"	"152"
+				}
+				"5"
+				{
+					"Name"				"instances/p2editor_1970/floor_ball_button_black.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"18"
+					"BrushSideCount"	"152"
+				}
+			}
+
+			"TargetName"		"bt"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:button;OnPressed"
+					"Deactivate"	"instance:button;OnUnPressed"
+				}
+			}
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+			"Offset"	"64 64 64"
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_TBEAM"
+		"ItemClass"		"ItemTBeam"
+		"Filter"		"Portal 2;Test Elements"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"An emitter that produces a swirling vortex that pushes or pulls objects. It can be reversed by inputs."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_tractor_beam"
+				"Model"
+				{
+					"ModelName"			"tbeam.3ds"
+					"TextureName"		"tbeam2.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL2_PuzzleEditor_Palette_tractor_beam"
+					"Image"			"palette/tbeam.png"
+					"Position"		"0 2 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"ConnectionCountPolarity"
+			{
+				"DefaultValue"		"0"
+				"Index"		"2"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"		"3"
+			}
+			"StartReversed"
+			{
+				"DefaultValue"		"0"
+				"Index"		"4"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/tbeam.vmf"
+					"EntityCount"		"9"
+					"BrushCount"		"3"
+					"BrushSideCount"	"22"
+				}
+				"1"
+				{
+					"Name"				"instances/p2editor_old/tbeam_frame_white.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"12"
+					"BrushSideCount"	"100"
+				}
+				"2"
+				{
+					"Name"				"instances/p2editor_old/tbeam_frame_black.vmf"
+					"EntityCount"		"1"
+					"BrushCount"		"12"
+					"BrushSideCount"	"100"
+				}
+			}
+
+			"TargetName"		"tb"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+				"CONNECTION_TBEAM_POLARITY"
+				{
+					"Activate"		"instance:counter_polarity;Add"
+					"Deactivate"	"instance:counter_polarity;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_CATAPULT"
+		"ItemClass"		"ItemCatapult"
+		"Filter"		"Portal 2;Test Elements;Panels"
+		"Author"		"Valve, Carl Kenner"
+		"Description" "A specially-shaped pool of repulsion gel that throws things along a preset trajectory. It is also capable of throwing paint bombs. (This is the old-styled Aerial Faith Plate.)" 
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_faith_plate"
+				"Model"
+				{
+					"ModelName"		"paint_splatter_blue.3ds"
+					"TextureName"		"faithplate.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_faith_plate"
+					"Image"		"palette/faithplate.png"
+					"Position"	"1 2 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_CATAPULT"
+			//InvalidSurface"		"CEILING"
+		}
+		"Properties"
+		{
+			"CatapultSpeed"
+			{
+				"DefaultValue"		"500"
+				"Index"		"1"
+			}
+			"TargetName"
+			{
+				"DefualtValue"		"target"
+				"Index"		"2"
+			}
+			"VerticalAlignment"
+			{
+				"DefaultValue"		"0"
+				"Index"		"0"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/faith_plate_floor.vmf"
+					"EntityCount"		"8"
+					"BrushCount"		"3"
+					"BrushSideCount"	"22"
+				}
+			}
+
+			"TargetName"		"fp"
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"CollideType"		"COLLIDE_SOLID"
+					"CollideAgainst"	"COLLIDE_SOLID COLLIDE_GLASS COLLIDE_GRATING COLLIDE_ANTLINES"
+
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			
+			"EmbedFace"
+			{
+				"Solid"
+				{
+					"Center"		"64 16 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"64 112 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+			}
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_LIGHT_BRIDGE"
+		"ItemClass"		"ItemLightBridge"
+		"Filter"		"Portal 2;Test Elements"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"A emitter that produces a continuous field of light. Objects will not pass through. Gel can be placed on the surface."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"PORTAL2_PuzzleEditor_Item_light_bridge"
+				"Model"
+				{
+					"ModelName"			"bridge.3ds"
+					"TextureName"		"lightbridgeemitter.png"
+				}
+				"Palette"
+				{
+					"Tooltip"		"PORTAL2_PuzzleEditor_Palette_light_bridge"
+					"Image"			"palette/hard_light_emitter.png"
+					"Position"		"2 2 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_6_POSITIONS"
+			"DesiredFacing"			"DESIRES_UP"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/p2editor_1970/bridge.vmf"
+					"EntityCount"	"5"
+				}
+			}
+
+			"TargetName"		"lb"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"  "1"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"  "1"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"  "1"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"  "1"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"  "1"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"  "1"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"  "1"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"  "1"
+				}
+
+				// top
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"4 -2 0"
+					"Priority"	"0"
+				}
+
+				// bottom
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"4 9 0"
+					"Priority"	"0"
+				}
+			}
+			"Offset"		"64 64 64"
+		}
+	}
+ 	"Item"
+	{
+		"Type"		"ITEM_LASER_EMITTER_CENTER"
+		"ItemClass"		"ItemLaserEmitter"
+		"Filter"		"Portal 2;Test Elements;Has Dialogue"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"A powerful laser beam. It ignites turrets and kills the player after prolonged contact. It can be redirected using redirection cubes, portals and Reflection Gel. It activates relays and catchers."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_laser_emitter"
+				"Model"
+				{
+					"ModelName"		"laseremitc.3ds"
+					"TextureName"		"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_laser_emitter"
+					"Image"		"palette/laser_emitter.png"
+					"Position"	"0 4 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_5_POSITIONS"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/laser_emitter_center.vmf"
+					"EntityCount"		"7"
+					"BrushCount"		"5"
+					"BrushSideCount"	"34"
+				}
+			}
+
+			"TargetName"		"laseremit"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"	"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 2 0"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+
+			"EmbedFace"
+			{
+				"Solid"
+				{
+					"Center"		"64 16 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"64 112 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"16 64 128"
+					"Dimensions"	"32 64 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"112 64 128"
+					"Dimensions"	"32 64 4"
+					"Grid"			"4x4"
+				}
+			}
+
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"1 3 0"
+					"SignageOffset"		"0 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"1 4 0"
+					"SignageOffset"		"0 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"6 3 0"
+					"SignageOffset"		"7 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"6 4 0"
+					"SignageOffset"		"7 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 1 0"
+					"SignageOffset"		"2 0 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 1 0"
+					"SignageOffset"		"5 0 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 6 0"
+					"SignageOffset"		"2 7 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 6 0"
+					"SignageOffset"		"5 7 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_LASER_CATCHER_CENTER"
+		"Filter"		"Portal 2; Test Elements"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"This sensor detects when a Discouragement Beam is pointed into it."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"PORTAL2_PuzzleEditor_Item_laser_catcher"
+				"Model"
+				{
+					"ModelName"		"laserrecc.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_laser_catcher"
+					"Image"		"palette/laser_catcher.png"
+					"Position"	"1 4 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_5_POSITIONS"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/laser_catcher_center.vmf"
+					"EntityCount"		"3"
+					"BrushCount"		"5"
+					"BrushSideCount"	"34"
+				}
+			}
+
+			"TargetName"		"lasercatch"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:laser_catcher;OnPowered"
+					"Deactivate"		"instance:laser_catcher;OnUnpowered"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"	"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 2 0"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"EmbedFace"
+			{
+				"Solid"
+				{
+					"Center"	"64 16 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"	"64 112 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"	"16 64 128"
+					"Dimensions"	"32 64 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"	"112 64 128"
+					"Dimensions"	"32 64 4"
+					"Grid"			"4x4"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"1 3 0"
+					"SignageOffset"		"0 2 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"1 4 0"
+					"SignageOffset"		"0 5 0"
+					"Priority"	"0"
+				}
+
+
+				// left
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"6 3 0"
+					"SignageOffset"		"7 2 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"6 4 0"
+					"SignageOffset"		"7 5 0"
+					"Priority"	"0"
+				}
+
+
+				// top
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 1 0"
+					"SignageOffset"		"2 0 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 1 0"
+					"SignageOffset"		"5 0 0"
+					"Priority"	"0"
+				}
+
+
+				// bottom
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 6 0"
+					"SignageOffset"		"2 7 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 6 0"
+					"SignageOffset"		"5 7 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_LASER_RELAY_CENTER"
+		"Filter"		"Portal 2;Test Elements"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"Detects when a Discouragement Beam is fired through it."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_laser_relay"
+				"Model"
+				{
+					"ModelName"		"laserrelayc.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_laser_relay"
+					"Image"		"palette/laser_receptacle.png"
+					"Position"	"2 4 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"Animations"
+			{
+				"ANIM_IDLE"		"0"
+				"ANIM_EDITING_ACTIVATE"	"1"
+				"ANIM_EDITING_DEACTIVATE" "2"
+			}
+			"MovementHandle"	"HANDLE_5_POSITIONS"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/laser_relay_center.vmf"
+					"EntityCount"		"3"
+					"BrushCount"		"5"
+					"BrushSideCount"	"34"
+				}
+			}
+
+			"TargetName"		"laserrelay"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:relay;OnPowered"
+					"Deactivate"		"instance:relay;OnUnpowered"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"	"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 2 0"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"EmbedFace"
+			{
+				"Solid"
+				{
+					"Center"		"64 16 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"64 112 128"
+					"Dimensions"	"128 32 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"16 64 128"
+					"Dimensions"	"32 64 4"
+					"Grid"			"4x4"
+				}
+				"Solid"
+				{
+					"Center"		"112 64 128"
+					"Dimensions"	"32 64 4"
+					"Grid"			"4x4"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"1 3 0"
+					"SignageOffset"		"0 2 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"1 4 0"
+					"SignageOffset"		"0 5 0"
+					"Priority"	"0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"6 3 0"
+					"SignageOffset"		"7 2 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"6 4 0"
+					"SignageOffset"		"7 5 0"
+					"Priority"	"0"
+				}
+
+				// bottom
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 6 0"
+					"SignageOffset"		"2 7 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 6 0"
+					"SignageOffset"		"5 7 0"
+					"Priority"	"0"
+				}
+
+				// top
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 1 0"
+					"SignageOffset"		"2 0 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 1 0"
+					"SignageOffset"		"5 0 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+   	"Item"
+	{
+		"Type"		"ITEM_PANEL_CLEAR"
+		"ItemClass"	"ItemAngledPanel"
+		"Filter"		"Portal 2;Panels"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"A glass panel that can rise to angles of 30, 45, 60 and 90 degrees. This is mounted on a small beam piece. The glass is now nicer looking."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_clear_panel"
+				"Model"
+				{
+					"ModelName"	"arm4_gls_90deg.3ds"
+					"TextureName"	"arm_motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_gls_60deg.3ds"
+					"TextureName"	"arm_motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_gls_45deg.3ds"
+					"TextureName"	"arm_motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_gls_30deg.3ds"
+					"TextureName"	"arm_motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_gls_90deg.3ds"
+					"TextureName"	"arm_motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_gls_60deg.3ds"
+					"TextureName"	"arm_motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_gls_45deg.3ds"
+					"TextureName"	"arm_motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_gls_30deg.3ds"
+					"TextureName"	"arm_motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"	"airlock_ghost_90deg.3ds"
+					"TextureName"	"arm_undeployed_glass.png"
+				}
+				"Model"
+				{
+					"ModelName"	"airlock_ghost_60deg.3ds"
+					"TextureName"	"arm_undeployed_glass.png"
+				}
+				"Model"
+				{
+					"ModelName"	"airlock_ghost_45deg.3ds"
+					"TextureName"	"arm_undeployed_glass.png"
+				}
+				"Model"
+				{
+					"ModelName"	"airlock_ghost_30deg.3ds"
+					"TextureName"	"arm_undeployed_glass.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_clear_panel"
+					"Image"		"palette/airlock.png"
+					"Position"	"0 5 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+			"DesiredFacing"		"DESIRES_DOWN"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartDeployed"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+			"Portalable"
+			{
+				"DefaultValue"	"1"
+				"Index"			"0"
+			}
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"3"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/panel_clear.vmf"
+					"EntityCount"		"13"
+					"BrushCount"		"5"
+					"BrushSideCount"	"39"
+				}
+			}
+
+			"TargetName"		"angledClearPanel"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"CollideType"		"COLLIDE_SOLID"
+					"CollideAgainst"	"COLLIDE_SOLID COLLIDE_PHYSICS"
+						
+					"Pos"		"0 0 0"
+				}
+
+				"Voxel"
+				{
+					"CollideType"		"COLLIDE_NOTHING"
+					"CollideAgainst"	"COLLIDE_ANTLINES"
+
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+		
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	"Item"
+	{
+		"Type"	"ITEM_PANEL_ANGLED"
+		"ItemClass"	"ItemAngledPanel"
+		"Filter"		"Portal 2;Panels"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"A wall section mounted on a metal beam that can rotate to angles of 30,45,60 and 90 degrees."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_angled_panel"
+				"Model"
+				{
+					"ModelName"	"arm4_white_90deg.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_white_60deg.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_white_45deg.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_white_30deg.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_blk_90deg.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_blk_60deg.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_blk_45deg.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_blk_30deg.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_ghost_90deg.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_ghost_60deg.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_ghost_45deg.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_ghost_30deg.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_angled_panel"
+					"Image"		"palette/panel_flap.png"
+					"Position"	"1 5 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+			"DesiredFacing"		"DESIRES_DOWN"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartDeployed"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+			"Portalable"
+			{
+				"DefaultValue"	"1"
+				"Index"			"0"
+			}
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"3"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/panel_nobrush.vmf"
+					"EntityCount"		"12"
+					"BrushCount"		"5"
+					"BrushSideCount"	"39"
+				}
+			}
+
+			"TargetName"		"angledPanel"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"CollideType"		"COLLIDE_SOLID"
+					"CollideAgainst"	"COLLIDE_SOLID COLLIDE_PHYSICS"
+						
+					"Pos"		"0 0 0"
+				}
+
+				"Voxel"
+				{
+					"CollideType"		"COLLIDE_NOTHING"
+					"CollideAgainst"	"COLLIDE_ANTLINES"
+
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+		
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+  	"Item"
+	{
+		"Type"		"ITEM_PANEL_STAIRS"
+		"ItemClass"	"ItemStairs"
+		"Filter"		"Portal 2;Panels"
+		"Author"		"Valve, Carl Kenner"
+		"Description"	"A 2x1 area of floor that can rise to form stairs."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_stairs"
+				"Model"
+				{
+					"ModelName"	"stairs.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"arm4_ghost_stairs_up.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_stairs"
+					"Image"		"palette/stairs.png"
+					"Position"	"3 1 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			"StartDeployed"
+			{
+				"DefaultValue"	"1"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/stairs.vmf"
+					"EntityCount"		"13"
+					"BrushCount"		"7"
+					"BrushSideCount"	"56"
+				}
+			}
+
+			"TargetName"		"st"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"	"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"CollideType"		"COLLIDE_SOLID"
+					"CollideAgainst"	"COLLIDE_SOLID COLLIDE_PHYSICS"
+					"Pos"			"0 0 0"
+
+					// First step
+					"Surface"
+					{
+						"Pos"		"0 0 0"
+					}
+					"Surface"
+					{
+						"Pos"		"0 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"0 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"0 3 0"
+					}
+
+					"Surface"
+					{
+						"Pos"		"1 0 0"
+					}
+					"Surface"
+					{
+						"Pos"		"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"1 3 0"
+					}
+
+					//Second Step bottom layer
+					"Surface"
+					{
+						"Pos"		"2 0 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 3 0"
+					}
+
+					"Surface"
+					{
+						"Pos"		"3 0 0"
+					}
+					"Surface"
+					{
+						"Pos"		"3 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"3 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"3 3 0"
+					}
+
+					//Second Step second layer
+					"Surface"
+					{
+						"Pos"		"2 0 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 3 1"
+					}
+
+					"Surface"
+					{
+						"Pos"		"3 0 1"
+					}
+					"Surface"
+					{
+						"Pos"		"3 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"3 2 1"
+					}
+					"Surface"
+					{
+						"Pos"		"3 3 1"
+					}
+				}
+				"Voxel"
+				{
+					"CollideType"		"COLLIDE_SOLID"
+					"CollideAgainst"	"COLLIDE_SOLID COLLIDE_PHYSICS"
+					"Pos"				"1 0 0"
+				}
+
+				"Voxel"
+				{
+					"CollideType"		"COLLIDE_NOTHING"
+					"CollideAgainst"	"COLLIDE_ANTLINES"
+					"Pos"				"0 0 0"
+					
+					"Surface"
+					{
+						"Normal"		"0 0 1"
+					}
+				}
+				"Voxel"
+				{
+					"CollideType"		"COLLIDE_NOTHING"
+					"CollideAgainst"	"COLLIDE_ANTLINES"
+					"Pos"				"1 0 0"
+					
+					"Surface"
+					{
+						"Normal"		"0 0 1"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+				"Voxel"
+				{
+					"Pos"		"1 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 0 0"
+					"SignageOffset"		"-2 1 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 2 0"
+					"SignageOffset"		"-2 3 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 6 0"
+					"SignageOffset"		"-2 7 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"16 0 0"
+					"SignageOffset"		"17 1 0"
+					"Priority"  "2"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"16 2 0"
+					"SignageOffset"		"17 3 0"
+					"Priority"  "2"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"16 4 0"
+					"SignageOffset"		"17 5 0"
+					"Priority"  "2"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"16 6 0"
+					"SignageOffset"		"17 7 0"
+					"Priority"  "2"
+					"GroupID"	"1"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"2 -1 0"
+					"SignageOffset"		"3 -2 0"
+					"Priority"  "2"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "3"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"6 -1 0"
+					"SignageOffset"		"7 -2 0"
+					"Priority"  "4"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"8 -1 0"
+					"SignageOffset"		"9 -2 0"
+					"Priority"  "4"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"10 -1 0"
+					"SignageOffset"		"11 -2 0"
+					"Priority"  "4"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"12 -1 0"
+					"SignageOffset"		"13 -2 0"
+					"Priority"  "4"
+					"GroupID"	"2"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"14 -1 0"
+					"SignageOffset"		"15 -2 0"
+					"Priority"  "4"
+					"GroupID"	"2"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "1"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"2 8 0"
+					"SignageOffset"		"3 9 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "3"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"6 8 0"
+					"SignageOffset"		"7 9 0"
+					"Priority"  "4"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"8 8 0"
+					"SignageOffset"		"9 9 0"
+					"Priority"  "4"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"10 8 0"
+					"SignageOffset"		"11 9 0"
+					"Priority"  "4"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"12 8 0"
+					"SignageOffset"		"13 9 0"
+					"Priority"  "4"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"14 8 0"
+					"SignageOffset"		"15 9 0"
+					"Priority"  "4"
+					"GroupID"	"3"
+				}
+			}
+		}
+	}
+ 	"Item"
+	{
+		"Type"		"ITEM_LIGHT_PANEL"
+		"ItemClass"	"itemlightstrip"
+		"Filter"		"Portal 2;Geometry"
+		"Author"		"Valve; Carl Kenner"
+		"Description"	"A fluorescent light that emits cool lighting. It may also be used to block portal placement or antline wiring."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"PORTAL2_PuzzleEditor_Item_light_strip"
+				"Model"
+				{
+					"ModelName"			"light_strip.3ds"
+					"TextureName"		"fizzler.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_light_strip"
+					"Image"		"palette/light_panel.png"
+					"Position"	"3 6 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"        "HANDLE_8_POSITIONS"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/light_strip.vmf"
+					"EntityCount"		"4"
+					"BrushCount"		"2"
+					"BrushSideCount"	"12"
+				}
+			}
+
+			"TargetName"		"lightstrip"
+			"Offset"	"64 64 64"
+		}
+	}
+
+	// BEE Items!!!
+	///////////////////
+	"Item"
+	{
+		"Type"		"ITEM_LIGHT_PANEL_WARM"
+		"ItemClass"	"itemlightstrip"
+		"Filter"		"BenVlodgi & Rantis;BEE;Geometry"
+		"Author"		"BenVlodgi, Rantis, Carl Kenner"
+		"Description"	"A fluorescent light that emits warm lighting. This light can be used to contrast or highlight areas as compared to the cool lights."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Warm Orange Neon Light"
+				"Model"
+				{
+					"ModelName"			"light_strip02.3ds"
+					"TextureName"		"fizzler.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"WARM LIGHT STRIP"
+					"Image"		"palette/light_panel_warm2.png"
+					"Position"	"3 7 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"        "HANDLE_8_POSITIONS"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_old/light_strip.vmf"
+					"EntityCount"		"2"
+					"BrushCount"		"5"
+					"BrushSideCount"	"30"
+				}
+			}
+			"TargetName"		"ls"
+			"Offset"	"64 64 64"
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_HIGH_ENERGY_PELLET_EMITTER"
+		"Filter"	"BEE;BenVlodgi & Rantis;Test Elements;Custom"
+		"Author"	"BenVlodgi, Rantis, Skotty, Carl Kenner"
+		"Description" "High Energy Pellet Emitter ported from Portal 1. This periodically shoots energy spheres which ricochet off walls and kill players. Direct them into catchers to activate them."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"High Energy Pellet Emitter"
+				"Model"
+				{
+					"ModelName"		"combine_ball_launcher.3ds"
+					"TextureName"		"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PELLET EMITTER"
+					"Image"		"palette/pellet_emitter2.png"
+					"Position"	"0 6 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/high_energy_pellet_emitter.vmf"
+					"EntityCount"		"20"
+					"BrushCount"		"20"
+					"BrushSideCount"	"20"
+					// packer_additem:models/effects/combineball.dx80.vtx
+					// packer_additem:models/effects/combineball.dx90.vtx
+					// packer_additem:models/effects/combineball.mdl
+					// packer_additem:models/effects/combineball.sw.vtx
+					// packer_additem:models/effects/combineball.vtx
+					// packer_additem:models/effects/combineball.vvd
+					// packer_additem:materials/models/effects/comball_glow1.vmt
+					// packer_additem:materials/models/effects/comball_glow1.vtf
+					// packer_additem:materials/models/effects/comball_glow2.vmt
+					// packer_additem:materials/models/effects/comball_glow2.vtf
+					// packer_additem:materials/models/effects/comball_sphere.vmt
+					// packer_additem:materials/models/effects/comball_sphere.vtf
+					// packer_additem:materials/models/effects/comball_tape.vmt
+					// packer_additem:materials/models/effects/comball_tape.vtf
+					// packer_additem:materials/effects/eball_finite_life.vmt
+					// packer_additem:materials/effects/eball_infinite_life.vmt
+					// packer_additem:materials/effects/comball/comball.vtf
+					// packer_additem:sound/weapons/physcannon/energy_bounce1.wav
+					// packer_additem:sound/weapons/physcannon/energy_bounce2.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate4.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate5.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_explosion2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby1.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_loop4.wav
+				}
+			}
+			"TargetName"		"pe"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_HIGH_ENERGY_PELLET_CATCHER"
+		"Filter"	"BEE;BenVlodgi & Rantis;Test Elements;Custom"
+		"Author"	"BenVlodgi, Rantis, Skotty, Carl Kenner"
+		"Description" "High Energy Pellet Catcher ported from Portal 1. When this is hit by a pellet the pellet is caught, permenently activating this catcher."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"High Energy Pellet Catcher"
+				"Model"
+				{
+					"ModelName"		"combine_ball_catcher.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PELLET CATCHER"
+					"Image"		"palette/pellet_catcher2.png"
+					"Position"	"1 6 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/high_energy_pellet_catcher.vmf"
+					"EntityCount"		"20"
+					"BrushCount"		"20"
+					"BrushSideCount"	"20"
+
+					// packer_additem:models/effects/combineball.dx80.vtx
+					// packer_additem:models/effects/combineball.dx90.vtx
+					// packer_additem:models/effects/combineball.mdl
+					// packer_additem:models/effects/combineball.sw.vtx
+					// packer_additem:models/effects/combineball.vtx
+					// packer_additem:models/effects/combineball.vvd
+					// packer_additem:materials/models/effects/comball_glow1.vmt
+					// packer_additem:materials/models/effects/comball_glow1.vtf
+					// packer_additem:materials/models/effects/comball_glow2.vmt
+					// packer_additem:materials/models/effects/comball_glow2.vtf
+					// packer_additem:materials/models/effects/comball_sphere.vmt
+					// packer_additem:materials/models/effects/comball_sphere.vtf
+					// packer_additem:materials/models/effects/comball_tape.vmt
+					// packer_additem:materials/models/effects/comball_tape.vtf
+					// packer_additem:materials/effects/eball_finite_life.vmt
+					// packer_additem:materials/effects/eball_infinite_life.vmt
+					// packer_additem:materials/effects/comball/comball.vtf
+				}
+			}
+			"TargetName"		"pc"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:powered;OnTrigger"
+					"Deactivate"	"instance:unpowered;OnTrigger"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"	"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 2 0"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	"Item"
+	{
+		"Type"		"ITEM_CRUSHER"
+		"Filter"	"BEE;BenVlodgi & Rantis;Custom"
+		"Author"	"Rantis & BenVlodgi, Carl Kenner"
+		"Description"	"Large crushers, seen in coop maps and during Chapter 10 of the singleplayer campaign. These oscillate repeatedly when enabled, killing players and destroying objects that are in its path."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Mashy Spike Plate"
+				"Model"
+				{
+					"ModelName"		"crusher.3ds"
+					"TextureName"		"observationroom.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"Mashy Spike Plate"
+					"Image"		"palette/crusher2.png"
+					"Position"	"2 5 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"DesiredFacing"		"DESIRES_UP"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"StartEnabled"
+			{
+				"DefaultValue"		"0"
+				"Index"		"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/p2editor_1970/crusher2.vmf"
+					"EntityCount"		"20"
+					"BrushCount"		"20"
+					"BrushSideCount"	"20"
+				}
+			}
+			"TargetName"		"msp"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+				"Voxel"
+				{
+					"Pos"		"0 -1 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+				"Voxel"
+				{
+					"Pos"		"-1 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+				"Voxel"
+				{
+					"Pos"		"-1 -1 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Volume"
+				{
+					"Pos1"		"0 -1 0"
+					"Pos2"		"-1 0 -5"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	
+	

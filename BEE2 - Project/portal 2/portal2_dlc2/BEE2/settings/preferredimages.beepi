@@ -1,0 +1,7 @@
+//type					image
+"ITEM_TRIGGERS"			"palette/trigger_outputs.png"
+"ITEM_BUTTON_FLOOR"		"palette/portal_buttons.png"
+"ITEM_CUBE"				"palette/cubes.png"
+"ITEM_BARRIER_HAZARD"	"palette/hazards.png"
+"ITEM_BARRIER"			"palette/glass_grating.png"
+"ITEM_PAINT_SPLAT"		"palette/paints.png"

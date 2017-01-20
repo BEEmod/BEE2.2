@@ -1,0 +1,326 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5685"
+	"mapversion" "56"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "1"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "56"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxblobcount" "250"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
+}
+entity
+{
+	"id" "316"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "infInValue$timer_delay0.1-1"
+		"OnMapSpawn" "brTest2.2-1"
+		"OnMapSpawn" "togTest2.2-1"
+	}
+	"origin" "-48 24 -48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "243"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "tog"
+	connections
+	{
+		"OnTrue" "relay_activatedTrigger0-1"
+		"OnFalse" "relay_deactivatedTrigger0-1"
+	}
+	"origin" "-48 24 -16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "179"
+	"classname" "logic_case"
+	"Case01" "99999999999"
+	"Case02" "-1"
+	"Case03" "0"
+	"targetname" "inf"
+	connections
+	{
+		"OnCase01" "brKill0-1"
+		"OnDefault" "togKill0-1"
+		"OnCase02" "brKill0-1"
+		"OnCase03" "brKill0-1"
+		"OnDefault" "btgKill0-1"
+		"OnCase03" "btmKill0-1"
+		"OnCase02" "btmKill0-1"
+		"OnCase01" "btmKill0-1"
+	}
+	"origin" "-48 24 -32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "87"
+	"classname" "prop_button"
+	"angles" "0 0 0"
+	"Delay" "0.5"
+	"istimer" "0"
+	"preventfastreset" "0"
+	"targetname" "btg"
+	connections
+	{
+		"OnPressed" "togToggleTest0-1"
+	}
+	"origin" "-48 0 -56"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "42"
+	"classname" "logic_relay"
+	"targetname" "relay_activated"
+	connections
+	{
+		"OnTrigger" "proxyProxyRelay0-1"
+	}
+	"origin" "-23 -28.5565 -56.0726"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "44"
+	"classname" "logic_relay"
+	"targetname" "relay_deactivated"
+	connections
+	{
+		"OnTrigger" "proxyProxyRelay0-1"
+	}
+	"origin" "-23 28.204 -59.7524"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "52"
+	"classname" "logic_branch"
+	"targetname" "br"
+	connections
+	{
+		"OnTrue" "relay_deactivatedTrigger0-1"
+		"OnTrue" "relay_activatedTrigger0.01-1"
+		"OnFalse" "relay_deactivatedTrigger0-1"
+	}
+	"origin" "-49.1152 -28.1453 -47"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "36"
+	"classname" "func_noportal_volume"
+	"spawnflags" "0"
+	solid
+	{
+		"id" "30"
+		side
+		{
+			"id" "1"
+			"plane" "(-32 -48 -56) (-64 -48 -56) (-64 48 -56)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2"
+			"plane" "(-32 48 -64) (-64 48 -64) (-64 -48 -64)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "3"
+			"plane" "(-64 48 -64) (-32 48 -64) (-32 48 -56)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(-32 -48 -64) (-64 -48 -64) (-64 -48 -56)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(-32 48 -64) (-32 -48 -64) (-32 -48 -56)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6"
+			"plane" "(-64 -48 -64) (-64 48 -64) (-64 48 -56)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "25"
+	"classname" "func_instance_parms"
+	"parm1" "$timer_delay float 3"
+	"parm2" "$timer_sound integer 0"
+	"origin" "-48 -32 -32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "6"
+	"classname" "prop_button"
+	"angles" "0 0 0"
+	"Delay" "$timer_delay"
+	"istimer" "1"
+	"preventfastreset" "0"
+	"targetname" "btm"
+	connections
+	{
+		"OnPressed" "brTest0-1"
+		"OnButtonReset" "brSetValueTest00-1"
+		"OnPressed" "brSetValueTest10.01-1"
+	}
+	"origin" "-48 0 -56"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "22"
+	"classname" "func_instance_io_proxy"
+	"targetname" "proxy"
+	"origin" "-48 0 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}

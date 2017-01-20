@@ -1,0 +1,4 @@
+VertexLitGeneric{
+	$basetexture	"models/props_map_editor/blue"
+	$alpha			"0.5"
+}

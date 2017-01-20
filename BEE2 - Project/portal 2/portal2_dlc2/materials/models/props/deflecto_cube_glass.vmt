@@ -1,0 +1,55 @@
+"Refract"
+{
+	"$alphatest" 	"1"
+	"$model"		"1"
+	"$surfaceprop" 	"water"
+
+	"Refract_dx90"
+	{
+		"$refractamount"	"0.2"
+		"$normalmap"	"dev/water_normal"
+ 		"$bluramount"	"2"
+		"$refracttint"	"[1 0.5 0.5]"
+	}
+	
+	"Refract_dx80"
+	{
+		"$refractamount"	"0.1"
+		"$dudvmap"	"dev/water_dudv"
+		"$refracttint"	"[1 0.5 0.5]"
+	}
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar"		"$normalmap"
+			"animatedtextureframenumvar"	"$bumpframe"
+			"animatedtextureframerate"		"30.00"
+		}
+		"Sine" { 
+			"resultVar"			"$alpha" 
+			"sineperiod"			"8"
+			"sinemin"				"0.01"
+			"sinemax"			"0.8"
+		} 
+
+	}
+
+	"UnlitGeneric_dx6"
+	{
+		"Proxies" { 
+			"Sine" { 
+				"resultVar"		"$alpha" 
+				"sineperiod"		"8"
+				"sinemin"			"0.0"
+				"sinemax"		"0.05"
+			} 
+			Empty{
+				"Comments"			"Follow:"
+				"Thank you to whoever made"	" the Liquid Portal Gun mod,"
+				"I borrowed a lot of the params"	"from it."
+			}
+		}
+	}	
+}

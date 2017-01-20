@@ -1,0 +1,1728 @@
+//@Style
+//      "Style"         "Clean"
+//      "Name"          "Mevious"
+//      "Author"        "Ben Bryant (Mevious)"
+//      "Comment"       "Mevious items"
+//@EndStyle
+
+"ItemData"
+{
+	// pellet destroyer
+	"Item"
+	{
+		//"Type"		"ITEM_HIGH_ENERGY_PELLET_DESTROYER"
+		"Type"		"ITEM_REXAURA_PELLET_DESTROYER"
+		"ItemClass"		"ItemPistonPlatform"
+		"Filter"	"Mevious;BEE 2"
+		"Author" "Ben Bryant (Mevious)"
+		"Description" "From the mod Rexaura for Portal 1"
+		"Editor"
+		{
+			"SubType"
+			{
+				// TODO
+				//"Name"		"PORTAL2_PuzzleEditor_Item_high_energy_pellet_destroyer"
+				//"Name"		"PORTAL2_PuzzleEditor_Item_rexaura_pellet_destroyer"
+				"Name"		"Rexaura Pellet Destroyer"
+				"Model"
+				{
+					"ModelName"		"piston_lift_grate.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section01.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section02.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section03.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"rexaura_destroyer.3ds" // TODO
+					"TextureName"	"claw_sphere.png"
+				}
+				"Model"
+				{
+					"ModelName"		"destination_target_outline.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_tube.3ds"
+					"TextureName"	"motionplatform.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"REXAURA PELLET DESTROYER"
+					// TODO
+					"Image"		"palette/rexaura_destroyer.png"
+					"Position"	"2 3 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"BottomLevel"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"TopLevel"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+			"StartUp"
+			{
+				"DefaultValue"		"0"
+				"Index"		"3"
+			}
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"4"
+			}
+			"AutoTrigger"
+			{
+				"DefaultValue"		"1"
+				"Index"		"5"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/rexaura/destroyer.vmf"
+					// TODO
+					"EntityCount"		"46"
+					"BrushCount"		"15"
+					"BrushSideCount"	"106"
+					// packer_additem:models/effects/combineball.dx80.vtx
+					// packer_additem:models/effects/combineball.dx90.vtx
+					// packer_additem:models/effects/combineball.mdl
+					// packer_additem:models/effects/combineball.sw.vtx
+					// packer_additem:models/effects/combineball.vtx
+					// packer_additem:models/effects/combineball.vvd
+					// packer_additem:materials/models/effects/comball_glow1.vmt
+					// packer_additem:materials/models/effects/comball_glow1.vtf
+					// packer_additem:materials/models/effects/comball_glow2.vmt
+					// packer_additem:materials/models/effects/comball_glow2.vtf
+					// packer_additem:materials/models/effects/comball_sphere.vmt
+					// packer_additem:materials/models/effects/comball_sphere.vtf
+					// packer_additem:materials/models/effects/comball_tape.vmt
+					// packer_additem:materials/models/effects/comball_tape.vtf
+					// packer_additem:materials/effects/eball_finite_life.vmt
+					// packer_additem:materials/effects/eball_infinite_life.vmt
+					// packer_additem:materials/effects/comball/comball.vtf
+				}
+			}
+
+			"TargetName"		"pistonlift"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+				"Voxel"
+				{
+					"Pos"		"0 0 -1"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	
+	
+	// variable length pellet field
+	"Item"
+	{
+		//"Type"	"ITEM_HIGH_ENERGY_PELLET_FIELD"
+		"Type"	"ITEM_REXAURA_FLUX_FIELD"
+		"ItemClass"	"ItemAngledPanel"
+		"Filter"	"Mevious;BEE 2"
+		"Author" "Ben Bryant (Mevious)"
+		"Description" "From the mod Rexaura for Portal 1"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Rexaura Flux Field"
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_1.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_2.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_3.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_4.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"REXAURA FLUX FIELD"
+					"Image"		"palette/fizzler_blue_purple.png"
+					"Position"	"$P"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_6_POSITIONS"
+			"DesiredFacing"		"DESIRES_HORIZONTAL"
+		}
+		"Properties"
+		{
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"3"
+			}
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"4"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"5"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/rexaura/field_variable.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"0"
+					"BrushSideCount"	"0"
+				}
+			}
+
+			// TODO
+			"TargetName"		"comball_field_g"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:field;OnUser1"
+					"Deactivate"	"instance:field;OnUser2"
+				}
+			}
+			"Offset"		"64 64 64"
+			
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"	"0"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+	
+
+	// timed pellet catcher
+	"Item"
+	{
+		"Filter"	"Mevious;BEE 2; BenVlodgi & Rantis"
+		"Author" "Benjamin Blodgett(BenVlodgi), August Loolam(Rantis), and Ben Bryant(Mevious)"
+		"Description" "Originally released with the BEEMOD1 modified for BEEMOD2"
+		"Type"		"ITEM_HIGH_ENERGY_PELLET_CATCHER_TIMED"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"			"Pellet Catcher Timed"
+				"Model"
+				{
+					"ModelName"		"combine_ball_catcher.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PELLET CATCHER TIMED"
+					"Image"		"palette/pellet_catcher2.png"
+					"Position"	"1 6 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"TimerDelay"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+		}
+
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/high_energy_pellet_catcher_timed.vmf"
+					// TODO
+					"EntityCount"		"20"
+					"BrushCount"		"20"
+					"BrushSideCount"	"20"
+					// packer_additem:materials/models/props/clean/combine_ball_catcher.mdl
+					// packer_additem:materials/models/props/ball_catcher_clean.vmt
+					// packer_additem:materials/models/props/ball_catcher_clean.vtf
+					// packer_additem:materials/models/props/ball_catcher_clean_exponent.vtf
+					// packer_additem:materials/models/props/ball_catcher_clean_lightwarp.vtf
+					// packer_additem:materials/models/props/ball_catcher_clean_normal.vtf
+					
+					// packer_additem:models/effects/combineball.dx80.vtx
+					// packer_additem:models/effects/combineball.dx90.vtx
+					// packer_additem:models/effects/combineball.mdl
+					// packer_additem:models/effects/combineball.sw.vtx
+					// packer_additem:models/effects/combineball.vtx
+					// packer_additem:models/effects/combineball.vvd
+					// packer_additem:materials/models/effects/comball_glow1.vmt
+					// packer_additem:materials/models/effects/comball_glow1.vtf
+					// packer_additem:materials/models/effects/comball_glow2.vmt
+					// packer_additem:materials/models/effects/comball_glow2.vtf
+					// packer_additem:materials/models/effects/comball_sphere.vmt
+					// packer_additem:materials/models/effects/comball_sphere.vtf
+					// packer_additem:materials/models/effects/comball_tape.vmt
+					// packer_additem:materials/models/effects/comball_tape.vtf
+					// packer_additem:materials/effects/eball_finite_life.vmt
+					// packer_additem:materials/effects/eball_infinite_life.vmt
+					// packer_additem:materials/effects/comball/comball.vtf
+				}
+			}
+			"TargetName"		"pelletcatch"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:powered;OnTrigger"
+					"Deactivate"	"instance:unpowered;OnTrigger"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Pos"	"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"	"2 2 0"
+					}
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+
+	// infinite pellet emitter
+	"Item"
+	{
+		"Filter"	"Mevious;BEE 2;BenVlodgi & Rantis"
+		"Author" "Benjamin Blodgett(BenVlodgi), August Loolam(Rantis), and Ben Bryant(Mevious)"
+		"Description" "A modified version of the pellet emitter which launches permanent (green) pellets."
+		"Type"		"ITEM_HIGH_ENERGY_PELLET_EMITTER_TIMED"
+		"ItemClass"		"ItemPedestalButton"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Pellet Emitter Timed"
+				"Model"
+				{
+					"ModelName"		"combine_ball_launcher.3ds"
+					"TextureName"		"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PELLET EMITTER TIMED"
+					"Image"		"palette/pellet_emitter2.png"
+					"Position"	"0 6 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"3"
+			}
+//			"StartEnabled"
+//			{
+//				"DefaultValue"		"1"
+//				"Index"		"4"
+//			}
+			"TimerDelay"
+			{
+				"DefaultValue"	"6"
+				"Index"			"1"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/high_energy_pellet_emitter_timed.vmf"
+					// TODO
+					"EntityCount"		"20"
+					"BrushCount"		"20"
+					"BrushSideCount"	"20"
+					// packer_additem:materials/models/props/clean/combine_ball_launcher.mdl
+					// packer_additem:materials/models/props/c_ball_launcher_clean.vmt
+					// packer_additem:materials/models/props/c_ball_launcher_clean.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_exponent.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_lightwarp.vtf
+					// packer_additem:materials/models/props/c_ball_launcher_clean_normal.vtf
+
+					// packer_additem:models/effects/combineball.dx80.vtx
+					// packer_additem:models/effects/combineball.dx90.vtx
+					// packer_additem:models/effects/combineball.mdl
+					// packer_additem:models/effects/combineball.sw.vtx
+					// packer_additem:models/effects/combineball.vtx
+					// packer_additem:models/effects/combineball.vvd
+					// packer_additem:materials/models/effects/comball_glow1.vmt
+					// packer_additem:materials/models/effects/comball_glow1.vtf
+					// packer_additem:materials/models/effects/comball_glow2.vmt
+					// packer_additem:materials/models/effects/comball_glow2.vtf
+					// packer_additem:materials/models/effects/comball_sphere.vmt
+					// packer_additem:materials/models/effects/comball_sphere.vtf
+					// packer_additem:materials/models/effects/comball_tape.vmt
+					// packer_additem:materials/models/effects/comball_tape.vtf
+					// packer_additem:materials/effects/eball_finite_life.vmt
+					// packer_additem:materials/effects/eball_infinite_life.vmt
+					// packer_additem:materials/effects/comball/comball.vtf
+					// packer_additem:sound/weapons/physcannon/energy_bounce1.wav
+					// packer_additem:sound/weapons/physcannon/energy_bounce2.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate4.wav
+					// packer_additem:sound/weapons/physcannon/energy_disintegrate5.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_explosion2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby1.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_flyby2.wav
+					// packer_additem:sound/weapons/physcannon/energy_sing_loop4.wav
+				}
+			}
+			"TargetName"		"pelletemit"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+					}
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+	
+	// rexaura holder
+	"Item"
+	{
+		"Filter"	"Mevious;BEE 2"
+		"Author" "Ben Bryant (Mevious)"
+		"Description" "Cube holder from the mod Rexaura for Portal 1"
+		//"Type"		"ITEM_CUBE_DEFLECTOR"
+		"Type"		"ITEM_REXAURA_CUBE_DEFLECTOR"
+		//"ItemClass"	"ItemButtonFloor"
+		"Editor"
+		{
+			"SubType"
+			{
+				//"Name"		"PORTAL2_PuzzleEditor_Item_cube_holder"
+				//"Name"		"PORTAL2_PuzzleEditor_Item_rexaura_holder"
+				"Name"		"Rexaura Cube Deflector"
+				"Model"
+				{
+					"ModelName"		"sentry.3ds"
+					"TextureName"		"sentryturret.png"
+				}
+				"Palette"
+				{
+					// TODO
+					"Tooltip"	"REXAURA CUBE DEFLECTOR"
+					// TODO
+					"Image"		"palette/turret.png"
+					"Position"	"1 6 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_4_DIRECTIONS"
+			"InvalidSurface"		"CEILING WALL"
+			"CanAnchorOnBarriers"		"1"
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"			"instances/BEE2/rexaura/cube_holder.vmf"
+					// TODO
+					"EntityCount"	"3"
+					//"BrushCount"		"15"
+					//"BrushSideCount"	"106"
+
+				}
+			}
+
+			"TargetName"		"turret"
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"				"0 0 0"
+					"CollideType"		"COLLIDE_SOLID"
+					"CollideAgainst"	"COLLIDE_SOLID COLLIDE_GLASS COLLIDE_GRATING COLLIDE_ANTLINES"
+
+					"Surface"
+					{
+						"Pos"		"1 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 0"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 0"
+					}
+
+					"Surface"
+					{
+						"Pos"		"1 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"1 2 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 1 1"
+					}
+					"Surface"
+					{
+						"Pos"		"2 2 1"
+					}
+				}	
+			}
+		}
+	}
+
+	// rexaura cube dropper
+	"Item"
+	{
+		"Type"			"ITEM_REXAURA_CUBE_DROPPER"
+		"Filter"	"Mevious;BEE 2"
+		"Author" "Valve and Ben Bryant (Mevious)"
+		"Description" "Dropper for Rexaura cubes. These cubes dissolve on contact with any hep."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Rexaura Cube Dropper"
+				"Model"
+				{
+					"ModelName"			"dropper.3ds"
+					"TextureName"		"dropper.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"REXAURA CUBE DROPPER"
+					"Image"		"palette/item_dropper.png"
+					"Position"	"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceCube"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandCube"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseCube"
+					"SOUND_DELETED"					"P2Editor.RemoveCube"
+				}
+				"Animations"
+				{
+						"ANIM_IDLE"					"0"
+						"ANIM_EDITING_ACTIVATE"		"1"
+						"ANIM_EDITING_DEACTIVATE"	"2"
+						"ANIM_DISAPPEAR"			"3"
+						"ANIM_REAPPEAR"				"4"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+			"InvalidSurface"		"WALL FLOOR"
+		}
+		"Properties"
+		{
+			"ConnectionCount"
+			{
+				"DefaultValue"	"0"
+				"Index"			"1"
+			}
+			// "TimerDelay"
+			// {
+				// "DefaultValue"	"3"
+				// "Index"			"2"
+			// }
+			// "TimerSound"
+			// {
+				// "DefaultValue"	"0"
+				// "Index"			"3"
+			// }
+
+			// TODO
+			// "CubeType"
+			// {
+				// "DefaultValue"	"0"
+				// "Index"			"0"
+			// }
+			// "AutoRespawn"
+			// {
+				// "DefaultValue"	"1"
+				// "Index"			"0"
+			// }
+			// "AutoDrop"
+			// {
+				// "DefaultValue"	"1"
+				// "Index"			"0"
+			// }
+			// "DropperEnabled"
+			// {
+				// "DefaultValue"	"1"
+				// "Index"			"0"
+			// }
+
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/rexaura/cube_dropper.vmf"
+					// TODO
+					"EntityCount"		"1"
+					"BrushCount"		"1"
+					"BrushSideCount"	"1"
+				}
+			}
+
+			// TODO
+			"TargetName"		"cube"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"			"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+
+	// pedistal button toggle
+	"Item"
+	{
+		"ItemClass"		"ItemPedestalButton"
+		"Type"			"ITEM_BUTTON_PEDESTAL_TOGGLE"
+		"Filter"	"Mevious;BEE 2"
+		"Author" "Valve and Ben Bryant (Mevious)"
+		"Description" "Modified pedestal button which will toggle output. If a delay is set it will behave normally."
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Pedestal Button Toggle"
+				"Model"
+				{
+					"ModelName"		"switch.3ds"
+					"TextureName"	"buttonpedestal.png"
+				}
+				"Palette"
+				{
+					// TODO
+					"Tooltip"		"PEDESTAL BUTTON TOGGLE"
+					"Image"			"palette/pedestal_button.png"
+					"Position"		"0 0 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceButton"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+					"SOUND_DELETED"					"P2Editor.RemoveButton"
+				}
+			}
+			"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		}
+		"Properties"
+		{
+			"TimerDelay"
+			{
+				"DefaultValue"	"3"
+				"Index"			"1"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/pedestal_button_toggle.vmf"
+					// TODO
+					"EntityCount"		"7"
+					"BrushCount"		"1"
+					"BrushSideCount"	"6"
+				}
+			}
+
+			"TargetName"		"button"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:relay_activated;OnTrigger"
+					"Deactivate"	"instance:relay_deactivated;OnTrigger"
+				}
+			}
+
+			"OccupiedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+						"Pos"		"0 1 0"
+					}
+					"Surface"
+					{
+						"Normal"	"0 0 1"
+						"Pos"		"0 2 0"
+					}
+
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 1 0"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 2 0"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 1 1"
+					}
+					"Surface"
+					{
+						"Normal"	"1 0 0"
+						"Pos"		"0 2 1"
+					}
+				}
+			}
+
+			"ConnectionPoints"
+			{
+				// outside voxel
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 6 0"
+					"SignageOffset"		"-2 7 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 2 0"
+					"SignageOffset"		"-2 3 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 0 0"
+					"SignageOffset"		"-2 1 0"
+					"Priority"  "0"
+					"GroupID"	"0"
+				}
+
+				// sides
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"0 -1 0"
+					"SignageOffset"		"1 -2 0"
+					"Priority"  "1"
+					"GroupID"	"1"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"0 8 0"
+					"SignageOffset"		"1 9 0"
+					"Priority"  "1"
+					"GroupID"	"2"
+				}
+
+				// inside voxel
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"3 7 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"3 5 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"3 3 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"3 1 0"
+					"Priority"  "2"
+					"GroupID"	"3"
+				}
+			}
+
+			"Offset"	"64 64 64"
+		}
+	}
+
+	// variable length lifeform sensor field
+	"Item"
+	{
+		"Filter"	"Mevious;BEE 2"
+		"Author" "Ben Bryant (Mevious)"
+		"Description" "Cube holder from the mod Rexaura for Portal 1"
+		"Type"	"ITEM_LIFEFORM_SENSOR"
+		"ItemClass"	"ItemAngledPanel"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Lifeform Sensor"
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_1.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_2.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_3.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_4.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"LIFEFORM SENSOR"
+					"Image"		"palette/fizzler_green_yellow2.png"
+					"Position"	"$P"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_6_POSITIONS"
+			"DesiredFacing"		"DESIRES_HORIZONTAL"
+		}
+		"Properties"
+		{
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"1"
+			}
+			"TimerDelay"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"3"
+			}
+
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/lifesensor.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"0"
+					"BrushSideCount"	"0"
+				}
+			}
+
+			// TODO
+			"TargetName"		"comball_field_g"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:field;OnUser1"
+					"Deactivate"	"instance:field;OnUser2"
+				}
+			}
+			"Offset"		"64 64 64"
+			
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"	"0"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+
+	// variable length cube sensor field
+	"Item"
+	{
+		"Filter"	"Mevious;BEE 2"
+		"Author" "Ben Bryant (Mevious)"
+		"Description" "Cube sensor field from the mod Deep Chambers for Portal 1"
+		"Type"	"ITEM_CUBE_SENSOR"
+		"ItemClass"	"ItemAngledPanel"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"Cube Sensor"
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_1.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_2.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_3.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_red_4.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_1.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_2.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_3.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Model"
+				{
+					"ModelName"	"comball_field_green_4.3ds"
+					"TextureName"	"laser_models.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"CUBE SENSOR"
+					"Image"		"palette/fizzler_green_yellow2.png"
+					"Position"	"$P"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"	"HANDLE_6_POSITIONS"
+			"DesiredFacing"		"DESIRES_HORIZONTAL"
+		}
+		"Properties"
+		{
+			"AngledPanelType"
+			{
+				"DefaultValue"	"2"
+				"Index"			"0"
+			}
+			"AngledPanelAnimation"
+			{
+				"DefaultValue"	"ramp_45_deg_open"
+				"Index"			"1"
+			}
+			"TimerDelay"
+			{
+				"DefaultValue"	"0"
+				"Index"			"2"
+			}
+			"TimerSound"
+			{
+				"DefaultValue"	"0"
+				"Index"			"3"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/cubesensor.vmf"
+					"EntityCount"		"0"
+					"BrushCount"		"0"
+					"BrushSideCount"	"0"
+				}
+			}
+
+			// TODO
+			"TargetName"		"comball_field_g"
+			"Outputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:field;OnUser1"
+					"Deactivate"	"instance:field;OnUser2"
+				}
+			}
+			"Offset"		"64 64 64"
+			
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 0 0"
+					"SignageOffset"		"1 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 2 0"
+					"SignageOffset"		"1 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 4 0"
+					"SignageOffset"		"1 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"2 6 0"
+					"SignageOffset"		"1 7 0"
+					"Priority"	"0"
+				}
+
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 0 0"
+					"SignageOffset"		"6 1 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 2 0"
+					"SignageOffset"		"6 3 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 4 0"
+					"SignageOffset"		"6 5 0"
+					"Priority"	"0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"5 6 0"
+					"SignageOffset"		"6 7 0"
+					"Priority"	"0"
+				}
+			}
+		}
+	}
+
+
+}

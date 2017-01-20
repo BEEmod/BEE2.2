@@ -1,0 +1,1 @@
+	"portal2.exe"	"C:\Program Files (x86)\Steam\steamapps\common\portal 2"

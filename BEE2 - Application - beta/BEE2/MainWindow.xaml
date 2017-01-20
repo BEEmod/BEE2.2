@@ -1,0 +1,68 @@
+﻿<Window x:Class="BEE2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BEE2 Beta" Height="700" Width="800" WindowStartupLocation="CenterScreen"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=" Auto" />
+            <RowDefinition Height="40" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" IsMainMenu="True" Name="menu1">
+            <MenuItem Header="_File">
+                <MenuItem Header="New Palette" InputGestureText="Ctrl+N" />
+                <Separator />
+                <MenuItem Header="Export Palette" InputGestureText="Ctrl+E" />
+                <Separator />
+                <MenuItem Header="Save Palette" InputGestureText="Ctrl+S" />
+                <MenuItem Header="Save Palette As..." />
+                <Separator />
+                <MenuItem Header="Exit" Click="ExitMenuItem_Click" InputGestureText="Alt+F4" />
+            </MenuItem>
+            <MenuItem Header="_Options">
+                <MenuItem Header="Options..." Click="OptionsMenuItem_Click" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="About..." Click="AboutMenuItem_Click" />
+            </MenuItem>
+        </Menu>
+        <Border Grid.Row="1" BorderThickness="1" BorderBrush="CadetBlue">
+            <TextBlock Text="Options Here" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </Border>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" VerticalAlignment="Top">
+                <Image Source="resources/menu.png" Height="600" Width="300" />
+                <TextBlock Text="Outgoing Palette" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+            <ListView Grid.Column="1" ItemsSource="{Binding PuzzleItems}">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Width="{Binding (FrameworkElement.ActualWidth), 
+                            RelativeSource={RelativeSource AncestorType=ScrollContentPresenter}}"
+                            ItemWidth="{Binding (ListView.View).ItemWidth, 
+                            RelativeSource={RelativeSource AncestorType=ListView}}"
+                            MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}"
+                            ItemHeight="{Binding (ListView.View).ItemHeight, 
+                            RelativeSource={RelativeSource AncestorType=ListView}}" />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <Border Grid.Column="2"  BorderThickness="1" BorderBrush="CadetBlue">
+                <ListBox ItemsSource="{Binding PuzzleItems}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Item.Item.ImageSource}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

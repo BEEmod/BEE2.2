@@ -1,0 +1,7 @@
+vertexlitgeneric
+{
+$basetexture "models/props/punt/orange"
+$surfaceprop glass
+$selfillum 1
+"%keywords" portal2
+}

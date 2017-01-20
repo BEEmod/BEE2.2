@@ -1,0 +1,1 @@
+EntFire( "@worldportal_script", "RunScriptCode", "entry(\""+self.GetName()+"\")", 0.0 );

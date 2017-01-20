@@ -1,0 +1,4 @@
+VertexLitGeneric{
+	$basetexture	"models/props_map_editor/comfield_blue"
+	$translucent	"1"
+}

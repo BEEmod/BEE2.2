@@ -1,0 +1,641 @@
+//@Style
+//      "Name"          "BEE2 Items"
+//      "Style"         "Clean"
+//      "Author"        "Rantis & BenVlodgi"
+//      "Comment"       "Items released with the BEE2"
+//@EndStyle
+"ItemData"
+{
+	"Item"
+	{
+		"Type"		"ITEM_PISTON_PLATFORM_PANEL_CEMENT"
+		"ItemClass"		"ItemPistonPlatform"
+        "Filter"		"BEE 2;BenVlodgi & Rantis"
+		"Author"		"Rantis & BenVlodgi"
+		"Description"	"A extendable or retractable piston platform with a portable face"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_piston_platform_panel_cement"
+				"Model"
+				{
+					"ModelName"		"piston_lift_grate.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section01.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section02.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section03.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_top_portal.3ds"
+					"TextureName"	"motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"		"destination_target_outline.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_tube.3ds"
+					"TextureName"	"motionplatform.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_piston_platform"
+					"Image"		"palette/piston_top_cement.png"
+					"Position"	"2 3 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"BottomLevel"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"TopLevel"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+			"StartUp"
+			{
+				"DefaultValue"		"0"
+				"Index"		"3"
+			}
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"4"
+			}
+			"AutoTrigger"
+			{
+				"DefaultValue"		"1"
+				"Index"		"5"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/piston_panel_cement.vmf"
+					"EntityCount"		"35"
+					"BrushCount"		"18"
+					"BrushSideCount"	"124"
+				}
+			}
+
+			"TargetName"		"pistonpanelmetal"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+				"Voxel"
+				{
+					"Pos"		"0 0 -1"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	
+	"Item"
+	{
+		"Type"		"ITEM_PISTON_PLATFORM_PANEL_METAL"
+		"ItemClass"		"ItemPistonPlatform"
+        "Filter"		"BEE 2;BenVlodgi & Rantis"
+		"Author"		"Rantis & BenVlodgi"
+		"Description"	"A extendable or retractable piston platform with a non-portable face"
+		"Editor"
+		{
+			"SubType"
+			{
+				"Name"		"PORTAL2_PuzzleEditor_Item_piston_platform_panel_metal"
+				"Model"
+				{
+					"ModelName"		"piston_lift_grate.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section01.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section02.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_section03.3ds"
+					"TextureName"	"pistonlift.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_top_noportal.3ds"
+					"TextureName"	"motionplatform.png"
+				}
+				"Model"
+				{
+					"ModelName"		"destination_target_outline.3ds"
+					"TextureName"	"arm_4panel.png"
+				}
+				"Model"
+				{
+					"ModelName"		"piston_lift_tube.3ds"
+					"TextureName"	"motionplatform.png"
+				}
+				"Palette"
+				{
+					"Tooltip"	"PORTAL2_PuzzleEditor_Palette_piston_platform"
+					"Image"		"palette/piston_top_metal.png"
+					"Position"	"2 3 0"
+				}
+				"Sounds"
+				{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+					"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+				}
+			}
+			"MovementHandle"		"HANDLE_NONE"
+		}
+		"Properties"
+		{
+			"BottomLevel"
+			{
+				"DefaultValue"		"0"
+				"Index"		"1"
+			}
+			"TopLevel"
+			{
+				"DefaultValue"		"1"
+				"Index"		"2"
+			}
+			"StartUp"
+			{
+				"DefaultValue"		"0"
+				"Index"		"3"
+			}
+			"ConnectionCount"
+			{
+				"DefaultValue"		"0"
+				"Index"		"4"
+			}
+			"AutoTrigger"
+			{
+				"DefaultValue"		"1"
+				"Index"		"5"
+			}
+		}
+		"Exporting"
+		{
+			"Instances"
+			{
+				"0"
+				{
+					"Name"				"instances/BEE2/piston_panel_metal.vmf"
+					"EntityCount"		"35"
+					"BrushCount"		"18"
+					"BrushSideCount"	"124"
+				}
+			}
+
+			"TargetName"		"pistonpanelmetal"
+			"Inputs"
+			{
+				"CONNECTION_STANDARD"
+				{
+					"Activate"		"instance:counter;Add"
+					"Deactivate"		"instance:counter;Subtract"
+				}
+			}
+			"Offset"		"64 64 64"
+			"EmbeddedVoxels"
+			{
+				"Voxel"
+				{
+					"Pos"		"0 0 0"
+				}
+				"Voxel"
+				{
+					"Pos"		"0 0 -1"
+				}
+			}
+			"ConnectionPoints"
+			{
+				// left
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 3 0"
+					"SignageOffset"		"-2 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"1 0 0"
+					"Pos"				"-1 4 0"
+					"SignageOffset"		"-2 5 0"
+					"Priority"  "0"
+				}
+
+				// right
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 3 0"
+					"SignageOffset"		"9 2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"-1 0 0"
+					"Pos"				"8 4 0"
+					"SignageOffset"		"9 5 0"
+					"Priority"  "0"
+				}
+
+				// up
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"3 -1 0"
+					"SignageOffset"		"2 -2 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 1 0"
+					"Pos"				"4 -1 0"
+					"SignageOffset"		"5 -2 0"
+					"Priority"  "0"
+				}
+
+				// down
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"3 8 0"
+					"SignageOffset"		"2 9 0"
+					"Priority"  "0"
+				}
+				"Point"
+				{
+					"Dir"				"0 -1 0"
+					"Pos"				"4 8 0"
+					"SignageOffset"		"5 9 0"
+					"Priority"  "0"
+				}
+			}
+		}
+	}
+	
+//"Item"
+//    {
+//        "ItemClass"	"ItemButtonFloor"
+//        "Type"		"ITEM_BEE_CCFLAG_LASERFIZZLER"
+//        "Filter"		"BEE 2;BenVlodgi & Rantis"
+//        "Editor"
+//        {
+//            "SubTypeProperty"		"ButtonType"
+//            "SubType"
+//            {
+//                "Name"		"PORTAL2_PuzzleEditor_Item_bee_ccflag_laserfizzler1"
+//                "Model"
+//                {
+//                    "ModelName"		"logic_and.3ds"
+//                    "TextureName"	"cube.png"
+//                }
+//                "Palette"
+//                {
+//                    "Tooltip"		"LOGIC GATES"
+//                    "Image"			"palette/logic.png"
+//                    "Position"		"1 7 0"
+//                }
+//                "Sounds"
+//                {
+//                    "SOUND_CREATED"					"P2Editor.PlaceButton"
+//                    "SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+//                    "SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+//                    "SOUND_DELETED"					"P2Editor.RemoveButton"
+//                }
+//            }
+			
+//            "SubType"
+//            {
+//                "Name"		"PORTAL2_PuzzleEditor_Item_bee_ccflag_laserfizzler2"
+//                "Model"
+//                {
+//                    "ModelName"		"logic_or.3ds"
+//                    "TextureName"	"cuberedirection.png"
+//                }
+//                "Sounds"
+//                {
+//                    "SOUND_CREATED"					"P2Editor.PlaceButton"
+//                    "SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+//                    "SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+//                    "SOUND_DELETED"					"P2Editor.RemoveButton"
+//                }
+//            }
+//            "SubType"
+//            {
+//                "Name"		"PORTAL2_PuzzleEditor_Item_bee_ccflag_laserfizzler3"
+//                "Model"
+//                {
+//                    "ModelName"		"logic_not.3ds"
+//                    "TextureName"	"cube.png"
+//                }
+//                "Sounds"
+//                {
+//                    "SOUND_CREATED"					"P2Editor.PlaceButton"
+//                    "SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandButton"
+//                    "SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseButton"
+//                    "SOUND_DELETED"					"P2Editor.RemoveButton"
+//                }
+//            }
+//            "MovementHandle"	"HANDLE_NONE"
+//        }
+//        "Properties"
+//        {
+//            "ConnectionCount"
+//            {
+//                "DefaultValue"		"0"
+//                "Index"		"1"
+//            }
+//            "ButtonType"
+//            {
+//                "DefaultValue"	"0"
+//                "Index"			"0"
+//            }
+//        }
+//        "Exporting"
+//        {
+//            "Instances"
+//            {
+//                "0"
+//                {
+//                    "Name"			"instances/bee2/ccflag_laserfizzler1.vmf"
+//                    "EntityCount"	"0"
+//                }
+//                "1"
+//                {
+//                    "Name"			"instances/bee2/ccflag_laserfizzler1.vmf"
+//                    "EntityCount"	"0"
+//                }
+//                "2"
+//                {
+//                    "Name"			"instances/bee2/ccflag_laserfizzler2.vmf"
+//                    "EntityCount"	"0"
+//                }
+//                "3"
+//                {
+//                    "Name"			"instances/bee2/ccflag_laserfizzler2.vmf"
+//                    "EntityCount"	"0"
+//                }
+//                "4"
+//                {
+//                    "Name"			"instances/bee2/ccflag_laserfizzler3.vmf"
+//                    "EntityCount"	"0"
+//                }
+//                "5"
+//                {
+//                    "Name"			"instances/bee2/ccflag_laserfizzler3.vmf"
+//                    "EntityCount"	"0"
+//                }
+//            }
+
+//            "TargetName"		"ccflag_laserfizzler"
+			
+//            "Offset"	"64 64 64"
+//        }
+//    }
+//    "Item"
+//    {
+//        "Filter"		"BEE 2;BenVlodgi & Rantis"
+//        "Type"		"ITEM_CATAPULT_128"
+//        "ItemClass"		"ItemCatapult"
+//        "Editor"
+//        {
+//            "SubType"
+//            {
+//                "Name"		"PORTAL2_PuzzleEditor_Item_faith_plate"
+//                "Model"
+//                {
+//                    "ModelName"		"faithplate.3ds"
+//                    "TextureName"		"faithplate.png"
+//                }
+//                "Palette"
+//                {
+//                    "Tooltip"	"PORTAL2_PuzzleEditor_Palette_faith_plate"
+//                    "Image"		"palette/faithplate.png"
+//                    "Position"	"1 2 0"
+//                }
+//                "Sounds"
+//                {
+//                    "SOUND_CREATED"					"P2Editor.PlaceOther"
+//                    "SOUND_EDITING_ACTIVATE"		"P2Editor.ExpandOther"
+//                    "SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
+//                    "SOUND_DELETED"					"P2Editor.RemoveOther"
+//                }
+//            }
+//            "MovementHandle"		"HANDLE_CATAPULT"
+//            //InvalidSurface"		"CEILING"
+//        }
+//        "Properties"
+//        {
+//            "CatapultSpeed"
+//            {
+//                "DefaultValue"		"500"
+//                "Index"		"1"
+//            }
+//            "TargetName"
+//            {
+//                "DefualtValue"		"target"
+//                "Index"		"2"
+//            }
+//            "VerticalAlignment"
+//            {
+//                "DefaultValue"		"0"
+//                "Index"		"0"
+//            }
+//        }
+//        "Exporting"
+//        {
+//            "Instances"
+//            {
+//                "0"
+//                {
+//                    "Name"				"instances/p2editor_clean/faith_plate_floor.vmf"
+//                    "EntityCount"		"8"
+//                    "BrushCount"		"3"
+//                    "BrushSideCount"	"22"
+//                }
+//            }
+
+//            "TargetName"		"fp"
+//            "Offset"		"64 64 64"
+//            "OccupiedVoxels"
+//            {
+//                "Voxel"
+//                {
+//                    "Pos"		"0 0 0"
+//                    "CollideType"		"COLLIDE_SOLID"
+//                    "CollideAgainst"	"COLLIDE_SOLID COLLIDE_GLASS COLLIDE_GRATING COLLIDE_ANTLINES"
+
+//                    "Surface"
+//                    {
+//                        "Normal"	"0 0 1"
+//                    }
+//                }
+//            }
+//            "EmbeddedVoxels"
+//            {
+//                "Voxel"
+//                {
+//                    "Pos"		"0 0 0"
+//                }
+//            }
+			
+//            "EmbedFace"
+//            {
+//                "Solid"
+//                {
+//                    "Center"		"64 16 128"
+//                    "Dimensions"	"128 32 4"
+//                    "Grid"			"4x4"
+//                }
+//                "Solid"
+//                {
+//                    "Center"		"64 112 128"
+//                    "Dimensions"	"128 32 4"
+//                    "Grid"			"4x4"
+//                }
+//            }
+//            "Overlay"
+//            {
+//                "Material"		"signage/signage_overlay_arrow"
+//                "Center"		"16 16 0"
+//                "Dimensions"	"32 32 0"
+//                "Rotation"		"0"
+//            }
+//            "Overlay"
+//            {
+//                "Material"		"signage/signage_overlay_catapult1"
+//                "Center"		"112 16 0"
+//                "Dimensions"	"32 32 0"
+//                "Rotation"		"180"
+//            }
+//            "Overlay"
+//            {
+//                "Material"		"signage/signage_overlay_catapult2"
+//                "Center"		"112 112 0"
+//                "Dimensions"	"32 32 0"
+//                "Rotation"		"180"
+//            }
+//        }
+//    }	
+}

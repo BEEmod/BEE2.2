@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	$basetexture		models/hmw/props/sendificator
+	$selfillum		1
+
+	$bumpmap		models/hmw/props/sendificator_n
+	$envmap			env_cubemap
+	$normalmapalphaenvmapmask 1
+
+	$phong			1
+	$phongexponent		5
+	$phongboost		1.0
+	$phongfresnelranges	"[0 0.5 1]"
+
+	$surfaceprop		metalpanel
+}

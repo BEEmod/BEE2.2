@@ -1,0 +1,926 @@
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (532839 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2470 texinfos to 711
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8060 / 65536 )
+nummapbrushes:    (  1434 /  8192 )
+nummapbrushsides: ( 12067 / 65536 )
+num_map_overlays: (    11 /   512 )
+nummodels:        (    82 /  1024 )
+num_entities:     (   702 / 16384 )
+
+9 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (532839 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2470 texinfos to 712
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8060 / 65536 )
+nummapbrushes:    (  1434 /  8192 )
+nummapbrushsides: ( 12067 / 65536 )
+num_map_overlays: (    11 /   512 )
+nummodels:        (    82 /  1024 )
+num_entities:     (   703 / 16384 )
+
+4 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (537257 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2476 texinfos to 710
+Reduced 56 texdatas to 52 (1556 bytes to 1451)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8118 / 65536 )
+nummapbrushes:    (  1445 /  8192 )
+nummapbrushsides: ( 12199 / 65536 )
+num_map_overlays: (    13 /   512 )
+nummodels:        (    84 /  1024 )
+num_entities:     (   721 / 16384 )
+
+4 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (537257 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2475 texinfos to 710
+Reduced 56 texdatas to 52 (1556 bytes to 1451)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8118 / 65536 )
+nummapbrushes:    (  1445 /  8192 )
+nummapbrushsides: ( 12199 / 65536 )
+num_map_overlays: (    13 /   512 )
+nummodels:        (    84 /  1024 )
+num_entities:     (   721 / 16384 )
+
+5 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (537257 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2477 texinfos to 714
+Reduced 56 texdatas to 52 (1556 bytes to 1451)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8118 / 65536 )
+nummapbrushes:    (  1445 /  8192 )
+nummapbrushsides: ( 12199 / 65536 )
+num_map_overlays: (    13 /   512 )
+nummodels:        (    84 /  1024 )
+num_entities:     (   721 / 16384 )
+
+5 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (532839 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2470 texinfos to 711
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8060 / 65536 )
+nummapbrushes:    (  1434 /  8192 )
+nummapbrushsides: ( 12067 / 65536 )
+num_map_overlays: (    11 /   512 )
+nummodels:        (    82 /  1024 )
+num_entities:     (   703 / 16384 )
+
+4 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (1)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (532839 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2470 texinfos to 712
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8060 / 65536 )
+nummapbrushes:    (  1434 /  8192 )
+nummapbrushsides: ( 12067 / 65536 )
+num_map_overlays: (    11 /   512 )
+nummodels:        (    82 /  1024 )
+num_entities:     (   703 / 16384 )
+
+4 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (1)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (532839 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2470 texinfos to 710
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8060 / 65536 )
+nummapbrushes:    (  1434 /  8192 )
+nummapbrushsides: ( 12067 / 65536 )
+num_map_overlays: (    11 /   512 )
+nummodels:        (    82 /  1024 )
+num_entities:     (   703 / 16384 )
+
+5 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (532839 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2470 texinfos to 712
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8060 / 65536 )
+nummapbrushes:    (  1434 /  8192 )
+nummapbrushsides: ( 12067 / 65536 )
+num_map_overlays: (    11 /   512 )
+nummodels:        (    82 /  1024 )
+num_entities:     (   703 / 16384 )
+
+4 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (537257 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2476 texinfos to 712
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8118 / 65536 )
+nummapbrushes:    (  1445 /  8192 )
+nummapbrushsides: ( 12199 / 65536 )
+num_map_overlays: (    18 /   512 )
+nummodels:        (    84 /  1024 )
+num_entities:     (   726 / 16384 )
+
+6 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 592 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (1)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (537257 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2475 texinfos to 712
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8118 / 65536 )
+nummapbrushes:    (  1445 /  8192 )
+nummapbrushsides: ( 12199 / 65536 )
+num_map_overlays: (    18 /   512 )
+nummodels:        (    84 /  1024 )
+num_entities:     (   726 / 16384 )
+
+5 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (562367 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2495 texinfos to 722
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8182 / 65536 )
+nummapbrushes:    (  1493 /  8192 )
+nummapbrushsides: ( 12666 / 65536 )
+num_map_overlays: (    18 /   512 )
+nummodels:        (   104 /  1024 )
+num_entities:     (   860 / 16384 )
+
+6 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (562367 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2494 texinfos to 722
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8182 / 65536 )
+nummapbrushes:    (  1493 /  8192 )
+nummapbrushsides: ( 12666 / 65536 )
+num_map_overlays: (    22 /   512 )
+nummodels:        (   104 /  1024 )
+num_entities:     (   864 / 16384 )
+
+6 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (562367 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2495 texinfos to 722
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8182 / 65536 )
+nummapbrushes:    (  1493 /  8192 )
+nummapbrushsides: ( 12666 / 65536 )
+num_map_overlays: (    22 /   512 )
+nummodels:        (   104 /  1024 )
+num_entities:     (   864 / 16384 )
+
+4 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (557949 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2489 texinfos to 720
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8124 / 65536 )
+nummapbrushes:    (  1482 /  8192 )
+nummapbrushsides: ( 12534 / 65536 )
+num_map_overlays: (    15 /   512 )
+nummodels:        (   102 /  1024 )
+num_entities:     (   841 / 16384 )
+
+4 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+Could not open instance file instances/bee2/ccflag_laserfizzler1.vmf
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+Could not open instance file instances/bee2/ccflag_laserfizzler1.vmf
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (2) (583518 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 760
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1532 /  8192 )
+nummapbrushsides: ( 12917 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   134 /  1024 )
+num_entities:     (  1030 / 16384 )
+
+8 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (595147 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 759
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1553 /  8192 )
+nummapbrushsides: ( 13043 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   155 /  1024 )
+num_entities:     (  1169 / 16384 )
+
+23 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (595147 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 759
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1553 /  8192 )
+nummapbrushsides: ( 13043 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   155 /  1024 )
+num_entities:     (  1173 / 16384 )
+
+8 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (595147 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 760
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1553 /  8192 )
+nummapbrushsides: ( 13043 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   155 /  1024 )
+num_entities:     (  1173 / 16384 )
+
+8 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (595147 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 761
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1553 /  8192 )
+nummapbrushsides: ( 13043 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   155 /  1024 )
+num_entities:     (  1165 / 16384 )
+
+5 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (595147 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 760
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1553 /  8192 )
+nummapbrushsides: ( 13043 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   155 /  1024 )
+num_entities:     (  1165 / 16384 )
+
+5 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (3) (595147 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 759
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1553 /  8192 )
+nummapbrushsides: ( 13043 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   155 /  1024 )
+num_entities:     (  1173 / 16384 )
+
+13 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (1)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (2) (595147 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 760
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1553 /  8192 )
+nummapbrushsides: ( 13043 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   155 /  1024 )
+num_entities:     (  1173 / 16384 )
+
+14 seconds elapsed
+
+
+
+materialPath: C:\steam\steamapps\common\Portal 2\portal2\materials
+Loading C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 616 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (3) (595147 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2561 texinfos to 760
+Reduced 55 texdatas to 51 (1540 bytes to 1435)
+Writing C:\steam\steamapps\common\Portal 2\sdk_content\maps\styled\preview.bsp
+
+nummapplanes:     (  8302 / 65536 )
+nummapbrushes:    (  1553 /  8192 )
+nummapbrushsides: ( 13043 / 65536 )
+num_map_overlays: (    19 /   512 )
+nummodels:        (   155 /  1024 )
+num_entities:     (  1173 / 16384 )
+
+13 seconds elapsed
