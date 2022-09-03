@@ -13,6 +13,8 @@ The BEE2.4 has been rewritten in Python, allowing it to be made cross-platform, 
 
 ### Carl and Ben's Extended Editor
 
+Original Download: [Thinking With Portals](https://www.thinking.withportals.com/view-download/?id=2781)
+
 This is a repository for the legacy (alpha) version of the BEE2.
 
 This version included integrated style software by [Carl Kenner](https://github.com/CarlKenner)
