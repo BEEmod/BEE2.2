@@ -6,7 +6,7 @@ The [BEE1](https://github.com/BEEmod/BEEMOD) is also still available. Being a si
 
 The BEE2.2 (this repository) is written in C#, and is only supported on Windows. 
 
-The BEE2.4 has been rewritten in Python, allowing it to be made cross-platform, and inlcudes lots of new items and functionality.
+The BEE2.4 has been rewritten in Python, allowing it to be made cross-platform, and includes lots of new items and functionality.
 
 
 # BEE2.2
