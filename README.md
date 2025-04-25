@@ -1,11 +1,8 @@
-### Note, this version of the BEE2 is extremely outdated with many bugs, and should not be used for making maps.
+### This is a legacy version of BEEmod.
 
-This repository exists only for archival/reference purposes. For an up-to-date version of the mod, see the [BEE2.4](https://github.com/BEEmod/BEE2.4).
+This is the original implementation of the BEE2 application and precompiler. It is written in C# and only runs on Windows. This version is no longer maintained, very buggy, and not recommended for new maps.
 
-- [BEE1.5](https://github.com/BEEmod/BEEMOD) is still available. Being a simple EditorItems replacement, the BEE1 version of the mod is able to be used on all operating systems.
-- [BEE2.2](https://github.com/BEEmod/BEE2.2) (this repository) is written in C#, and is only supported on Windows.
-- [BEE2.4](https://github.com/BEEmod/BEE2.4) has been rewritten in Python, allowing it to be made cross-platform, and inlcudes lots of new items and functionality.
-
+See [BEE2.4](https://github.com/BEEmod/BEE2.4) for the currently maintained version of BEEmod, or [BEE1.5](https://github.com/BEEmod/BEEMOD) for the original version which does not include an application at all.
 
 # BEE2.2
 
